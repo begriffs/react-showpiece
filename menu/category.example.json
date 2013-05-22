@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "url": "/mammals",
+      "text": "Mammals",
+      "description": "Look at these cuddly animals",
+      "items": [
+        { "url": "/mammals/puppies", "text": "Puppies" },
+        { "url": "/mammals/kitties", "text": "Kitties" }
+      ]
+    },
+    {
+      "url": "/reptiles",
+      "text": "Reptiles",
+      "selected": true,
+      "description": "Heartless dinosaur-spawn",
+      "items": [
+        { "url": "/reptiles/alligators", "text": "Alligators" }
+      ]
+    }
+  ]
+}

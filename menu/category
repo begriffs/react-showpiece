@@ -1,0 +1,21 @@
+{.section items}
+  <nav>
+    <ul>
+    {.repeated section @}
+      <li>
+        <a {.section selected}class="selected"{.end} href="{url|htmltag}">{text|html}</a>
+        {.section items}
+          <dl>
+            {.section description}
+              <dt>{description|html}</dt>
+            {.end}
+            {.repeated section items}
+              <dd><a href="{url|htmltag}">{text|html}</a></dd>
+            {.end}
+          </dl>
+        {.end}
+      </li>
+    {.end}
+    </ul>
+  </nav>
+{.end}
