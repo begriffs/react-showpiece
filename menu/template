@@ -7,34 +7,34 @@
         {.section items}
           <details>
             <summary>
-              {.section disabled}
-                {text|html}
-              {.or}
-                <a href="{url|htmltag}">{text|html}</a>
-              {.end}
-            </summary>
-            {.section description}
-              <header>{description|html}</header>
-            {.end}
-            <ul>
-              {.repeated section @}
-                <li class="sub {.section active}active{.end}
-                           {.section disabled}disabled{.end}">
-                {.section disabled}
-                  {text|html}
-                {.or}
-                  <a href="{url|htmltag}">{text|html}</a>
-                {.end}
-                </li>
-              {.end}
-            </ul>
-          </details>
+        {.end}
+        {.section disabled}
+          {text|html}
         {.or}
+          <a href="{url|htmltag}">{text|html}</a>
+        {.end}
+        {.section items}
+          </summary>
+        {.end}
+        {.section description}
+          <header>{@|html}</header>
+        {.end}
+        {.section items}
+          <ul>
+        {.end}
+        {.repeated section items}
+          <li class="sub {.section active}active{.end}
+                     {.section disabled}disabled{.end}">
           {.section disabled}
             {text|html}
           {.or}
             <a href="{url|htmltag}">{text|html}</a>
           {.end}
+          </li>
+        {.end}
+        {.section items}
+            </ul>
+          </details>
         {.end}
       </li>
     {.end}
