@@ -5,9 +5,9 @@
       <li class="{.section active}active{.end}
                  {.section disabled}disabled{.end}">
         {.section disabled}
-          {text|html}
+          <span class="title">{text|html}</span>
         {.or}
-          <a href="{url|htmltag}">{text|html}</a>
+          <a class="title" href="{url|htmltag}">{text|html}</a>
         {.end}
         {.section items}
           <ul>
@@ -15,12 +15,12 @@
               <legend>{description|html}</legend>
             {.end}
             {.repeated section items}
-              <li class="{.section active}active{.end}
+              <li class="sub {.section active}active{.end}
                          {.section disabled}disabled{.end}">
               {.section disabled}
-                {text|html}
+                <span class="title">{text|html}</span>
               {.or}
-                <a href="{url|htmltag}">{text|html}</a>
+                <a class="title" href="{url|htmltag}">{text|html}</a>
               {.end}
               </li>
             {.end}
