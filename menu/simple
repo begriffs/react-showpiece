@@ -1,9 +1,0 @@
-{.section items}
-  <nav>
-    <ul>
-    {.repeated section @}
-      <li><a href="{url|htmltag}">{text|html}</a></li>
-    {.end}
-    </ul>
-  </nav>
-{.end}
