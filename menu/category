@@ -2,17 +2,29 @@
   <nav>
     <ul>
     {.repeated section @}
-      <li>
-        <a {.section selected}class="selected"{.end} href="{url|htmltag}">{text|html}</a>
+      <li class="{.section active}active{.end}
+                 {.section disabled}disabled{.end}">
+        {.section disabled}
+          {text|html}
+        {.or}
+          <a href="{url|htmltag}">{text|html}</a>
+        {.end}
         {.section items}
-          <dl>
+          <ul>
             {.section description}
-              <dt>{description|html}</dt>
+              <legend>{description|html}</legend>
             {.end}
             {.repeated section items}
-              <dd><a href="{url|htmltag}">{text|html}</a></dd>
+              <li class="{.section active}active{.end}
+                         {.section disabled}disabled{.end}">
+              {.section disabled}
+                {text|html}
+              {.or}
+                <a href="{url|htmltag}">{text|html}</a>
+              {.end}
+              </li>
             {.end}
-          </dl>
+          </ul>
         {.end}
       </li>
     {.end}

@@ -3,19 +3,30 @@
     {
       "url": "/mammals",
       "text": "Mammals",
+      "active": true,
       "description": "Look at these cuddly animals",
       "items": [
-        { "url": "/mammals/puppies", "text": "Puppies" },
-        { "url": "/mammals/kitties", "text": "Kitties" }
+        {
+          "url": "/mammals/puppies",
+          "text": "Puppies",
+          "disabled": true
+        },
+        {
+          "url": "/mammals/kitties",
+          "text": "Kitties",
+          "active": true
+        }
       ]
     },
     {
       "url": "/reptiles",
       "text": "Reptiles",
-      "selected": true,
       "description": "Heartless dinosaur-spawn",
       "items": [
-        { "url": "/reptiles/alligators", "text": "Alligators" }
+        {
+          "url": "/reptiles/alligators",
+          "text": "Alligators"
+        }
       ]
     }
   ]
