@@ -4,28 +4,32 @@
     {.repeated section @}
       <li class="{.section active}active{.end}
                  {.section disabled}disabled{.end}">
-        {.section disabled}
-          <span class="title">{text|html}</span>
-        {.or}
-          <a class="title" href="{url|htmltag}">{text|html}</a>
-        {.end}
-        {.section items}
-          <ul>
-            {.section description}
-              <legend>{description|html}</legend>
+        <details>
+          <summary>
+            {.section disabled}
+              {text|html}
+            {.or}
+              <a href="{url|htmltag}">{text|html}</a>
             {.end}
-            {.repeated section items}
-              <li class="sub {.section active}active{.end}
-                         {.section disabled}disabled{.end}">
-              {.section disabled}
-                <span class="title">{text|html}</span>
-              {.or}
-                <a class="title" href="{url|htmltag}">{text|html}</a>
+          </summary>
+          {.section description}
+            <header>{description|html}</header>
+          {.end}
+          {.section items}
+            <ul>
+              {.repeated section items}
+                <li class="sub {.section active}active{.end}
+                           {.section disabled}disabled{.end}">
+                {.section disabled}
+                  {text|html}
+                {.or}
+                  <a href="{url|htmltag}">{text|html}</a>
+                {.end}
+                </li>
               {.end}
-              </li>
-            {.end}
-          </ul>
-        {.end}
+            </ul>
+          {.end}
+        </details>
       </li>
     {.end}
     </ul>
