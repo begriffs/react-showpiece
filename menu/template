@@ -1,8 +1,8 @@
 {.section items}
   <nav>
-    <ul>
+    <ul class="main">
     {.repeated section @}
-      <li class="{.section active}active{.end}
+      <li class="main {.section active}active{.end}
                  {.section disabled}disabled{.end}">
         {.section items}
           <details>
@@ -20,7 +20,7 @@
           <header>{@|html}</header>
         {.end}
         {.section items}
-          <ul>
+          <ul class="sub">
         {.end}
         {.repeated section items}
           <li class="sub {.section active}active{.end}
