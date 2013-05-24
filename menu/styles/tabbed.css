@@ -1,0 +1,25 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li.main {
+  vertical-align: top;
+  display: inline-block;
+}
+
+nav header, nav ul.sub {
+  padding: 1em;
+}
+
+nav ul.sub {
+  padding-top: 0;
+}
+
+nav li.sub {
+  list-style-type: none;
+}
+
+nav .active summary, nav li.sub.active {
+  font-weight: bold;
+}
