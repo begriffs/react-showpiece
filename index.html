@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html id="home" lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>Showpiece Playground</title>
+    <script src="json-template.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+
+    <style>
+      #control, #preview { display: inline-block; }
+      #control { width: 50%; }
+      #preview { vertical-align: top; }
+      textarea { width: 100%; }
+    </style>
+  </head>
+  <body>
+    <div id="control">
+      <select id="widgets"></select>
+      <select id="examples"></select>
+      <button id="render">Render</button>
+      <textarea id="editor" rows="40"></textarea>
+    </div>
+    <div id="preview"></div>
+
+    <script>
+      $(function () {
+        $('#examples').change(function () {
+          $.ajax({
+            url: this.value,
+            dataType: 'json',
+            success: function (data) {
+              $('#editor').val(window.atob(data.content.replace(/\s/g, '')));
+            }
+          });
+        });
+
+        $('#widgets').change(function () {
+          $('#examples').empty();
+          var widget = this.value;
+          $.ajax({
+            url: 'https://api.github.com/repos/begriffs/showpiece/contents/' + widget + '/examples',
+            dataType: 'json',
+            success: function (data) {
+              _.each(data, function (file) {
+                $('#examples').append(
+                  $('<option></option>')
+                    .attr('value', file.url)
+                    .text(file.name)
+                );
+              });
+              $('#examples').trigger('change');
+
+              $.ajax({
+                url: 'https://api.github.com/repos/begriffs/showpiece/contents/' + widget + '/template?ref=master',
+                dataType: 'json',
+                success: function (data) {
+                  $('#editor').data('template', window.atob(data.content.replace(/\s/g, '')));
+                }
+              });
+            }
+          });
+        });
+
+        $.ajax({
+          url: 'https://api.github.com/repos/begriffs/showpiece/contents/',
+          dataType: 'json',
+          success: function (data) {
+            _.each(data, function (file) {
+              if(file.type === 'dir') {
+                $('#widgets').append(
+                  $('<option></option>')
+                    .attr('value', file.path)
+                    .text(file.name)
+                );
+              }
+            });
+            $('#widgets').trigger('change');
+          }
+        });
+
+        $('#render').click(function () {
+          $('#preview').html(
+            jsontemplate.expand(
+              $('#editor').data('template'),
+              JSON.parse($('#editor').val())
+            )
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
