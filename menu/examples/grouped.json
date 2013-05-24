@@ -1,0 +1,33 @@
+[
+  {
+    "url": "/mammals",
+    "text": "Mammals",
+    "active": true,
+    "groups": [
+      {
+        "text": "File",
+        "items": [
+          {
+            "url": "/open",
+            "text": "Open",
+            "active": true
+          },
+          {
+            "url": "/save",
+            "text": "Save As...",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "url": "/print",
+            "text": "Print",
+            "active": true
+          }
+        ]
+      }
+    ]
+  }
+]
