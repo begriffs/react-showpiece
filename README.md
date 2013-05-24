@@ -1,3 +1,7 @@
+### Showpiece: your data → perfect semantic html
+
+Try the [playground](http://begriffs.github.io/showpiece).
+
 Let's give designers a sane baseline on which to base their work.
 Showpiece is a compilation of
 [templates](https://json-template.googlecode.com/svn/trunk/doc/Introducing-JSON-Template.html)
