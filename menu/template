@@ -10,7 +10,11 @@
       {.section disabled}
         {text|html}
       {.or}
-        <a href="{url|htmltag}">{text|html}</a>
+        {.section url}
+          <a href="{@|htmltag}">{text|html}</a>
+        {.or}
+          {text|html}
+        {.end}
       {.end}
       {.section items}
         </summary>
