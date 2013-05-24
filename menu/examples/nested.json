@@ -3,7 +3,6 @@
     "url": "/mammals",
     "text": "Mammals",
     "active": true,
-    "description": "Look at these cuddly animals",
     "items": [
       {
         "url": "/mammals/puppies",
@@ -20,7 +19,6 @@
   {
     "url": "/reptiles",
     "text": "Reptiles",
-    "description": "Heartless dinosaur-spawn",
     "items": [
       {
         "url": "/reptiles/alligators",
