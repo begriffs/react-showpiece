@@ -15,9 +15,10 @@
         {.end}
         {.section items}
           </summary>
+          <fieldset>
         {.end}
         {.section description}
-          <header>{@|html}</header>
+          <legend>{@|html}</legend>
         {.end}
         {.section items}
           <ul class="sub">
@@ -34,6 +35,7 @@
         {.end}
         {.section items}
             </ul>
+          </fieldset>
           </details>
         {.end}
       </li>
