@@ -14,12 +14,6 @@
       {.end}
       {.section items}
         </summary>
-        <fieldset>
-      {.end}
-      {.section description}
-        <legend>{@|html}</legend>
-      {.end}
-      {.section items}
         <ul class="sub">
       {.end}
       {.repeated section items}
@@ -34,7 +28,6 @@
       {.end}
       {.section items}
           </ul>
-        </fieldset>
         </details>
       {.end}
     </li>
