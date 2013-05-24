@@ -1,11 +1,9 @@
 [
   {
-    "url": "/mammals",
-    "text": "Mammals",
-    "active": true,
+    "text": "File",
     "groups": [
       {
-        "text": "File",
+        "text": "IO Stuff",
         "items": [
           {
             "url": "/open",
