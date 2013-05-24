@@ -2,8 +2,7 @@
 
 Try the [playground](http://begriffs.github.io/showpiece).
 
-Let's give designers a sane baseline on which to base their work.
-Showpiece is a compilation of
+Let's give designers a sane baseline for their work. Showpiece is a compilation of
 [templates](https://json-template.googlecode.com/svn/trunk/doc/Introducing-JSON-Template.html)
 to turn JSON descriptions of page elements into perfect semantic markup.
 The idea is that web apps will serve only relevant JSON data and then
