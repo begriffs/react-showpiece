@@ -15,6 +15,13 @@ giving them a familiar standard. Sites using showpiece can crib from a
 common pool of styles, and are expressive enough to gracefully degrade
 on all devices and clients.
 
+### Abstracted from Real Sites
+
+The markup in this project comes from experiments replicating parts of
+real sites. The challenge is to collect a wide assortment of screenshots
+of actual page items, like menus, then invent one piece of clean markup
+that can be styled to look like any of them.
+
 ### Quality
 
 The resulting markup is crowd-curated to be
