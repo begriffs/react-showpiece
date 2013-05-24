@@ -1,45 +1,43 @@
-{.section items}
-  <nav>
-    <ul class="main">
-    {.repeated section @}
-      <li class="main {.section active}active{.end}
-                 {.section disabled}disabled{.end}">
-        {.section items}
-          <details>
-            <summary>
-        {.end}
+<nav>
+  <ul class="main">
+  {.repeated section @}
+    <li class="main {.section active}active{.end}
+               {.section disabled}disabled{.end}">
+      {.section items}
+        <details>
+          <summary>
+      {.end}
+      {.section disabled}
+        {text|html}
+      {.or}
+        <a href="{url|htmltag}">{text|html}</a>
+      {.end}
+      {.section items}
+        </summary>
+        <fieldset>
+      {.end}
+      {.section description}
+        <legend>{@|html}</legend>
+      {.end}
+      {.section items}
+        <ul class="sub">
+      {.end}
+      {.repeated section items}
+        <li class="sub {.section active}active{.end}
+                   {.section disabled}disabled{.end}">
         {.section disabled}
           {text|html}
         {.or}
           <a href="{url|htmltag}">{text|html}</a>
         {.end}
-        {.section items}
-          </summary>
-          <fieldset>
-        {.end}
-        {.section description}
-          <legend>{@|html}</legend>
-        {.end}
-        {.section items}
-          <ul class="sub">
-        {.end}
-        {.repeated section items}
-          <li class="sub {.section active}active{.end}
-                     {.section disabled}disabled{.end}">
-          {.section disabled}
-            {text|html}
-          {.or}
-            <a href="{url|htmltag}">{text|html}</a>
-          {.end}
-          </li>
-        {.end}
-        {.section items}
-            </ul>
-          </fieldset>
-          </details>
-        {.end}
-      </li>
-    {.end}
-    </ul>
-  </nav>
-{.end}
+        </li>
+      {.end}
+      {.section items}
+          </ul>
+        </fieldset>
+        </details>
+      {.end}
+    </li>
+  {.end}
+  </ul>
+</nav>

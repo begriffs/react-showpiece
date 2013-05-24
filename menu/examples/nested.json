@@ -1,37 +1,35 @@
-{
-  "items": [
-    {
-      "url": "/mammals",
-      "text": "Mammals",
-      "active": true,
-      "description": "Look at these cuddly animals",
-      "items": [
-        {
-          "url": "/mammals/puppies",
-          "text": "Puppies",
-          "disabled": true
-        },
-        {
-          "url": "/mammals/kitties",
-          "text": "Kitties",
-          "active": true
-        }
-      ]
-    },
-    {
-      "url": "/reptiles",
-      "text": "Reptiles",
-      "description": "Heartless dinosaur-spawn",
-      "items": [
-        {
-          "url": "/reptiles/alligators",
-          "text": "Alligators"
-        }
-      ]
-    },
-    {
-      "url": "/other",
-      "text": "Mystery"
-    }
-  ]
-}
+[
+  {
+    "url": "/mammals",
+    "text": "Mammals",
+    "active": true,
+    "description": "Look at these cuddly animals",
+    "items": [
+      {
+        "url": "/mammals/puppies",
+        "text": "Puppies",
+        "disabled": true
+      },
+      {
+        "url": "/mammals/kitties",
+        "text": "Kitties",
+        "active": true
+      }
+    ]
+  },
+  {
+    "url": "/reptiles",
+    "text": "Reptiles",
+    "description": "Heartless dinosaur-spawn",
+    "items": [
+      {
+        "url": "/reptiles/alligators",
+        "text": "Alligators"
+      }
+    ]
+  },
+  {
+    "url": "/other",
+    "text": "Mystery"
+  }
+]
