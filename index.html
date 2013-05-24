@@ -19,7 +19,8 @@
       <select id="widgets"></select>
       <select id="examples"></select>
       <button id="render">Render</button>
-      <textarea id="editor" rows="40"></textarea>
+      <textarea id="editor" rows="20"></textarea>
+      <textarea id="template" rows="10"></textarea>
     </div>
     <div id="preview"></div>
 
@@ -55,7 +56,7 @@
                 url: 'https://api.github.com/repos/begriffs/showpiece/contents/' + widget + '/template?ref=master',
                 dataType: 'json',
                 success: function (data) {
-                  $('#editor').data('template', window.atob(data.content.replace(/\s/g, '')));
+                  $('#template').val(window.atob(data.content.replace(/\s/g, '')));
                 }
               });
             }
@@ -82,7 +83,7 @@
         $('#render').click(function () {
           $('#preview').html(
             jsontemplate.expand(
-              $('#editor').data('template'),
+              $('#template').val(),
               JSON.parse($('#editor').val())
             )
           );
