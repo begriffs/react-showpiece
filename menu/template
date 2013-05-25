@@ -57,7 +57,7 @@
         </li>
       {.end}
       {.repeated section groups}
-        <fieldset>
+        <fieldset{.section auxiliary} class="auxiliary"{.end}>
         {.section text}
           <legend>{@|html}</legend>
         {.end}
