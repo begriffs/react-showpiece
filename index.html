@@ -36,6 +36,8 @@
         padding-top: 25px;
       }
     </style>
+
+    <style class="github"></style>
   </head>
   <body>
     <div class="tl"><div class="liner">
@@ -71,6 +73,15 @@
             }
           });
         });
+        $('#styles').change(function () {
+          $.ajax({
+            url: this.value,
+            dataType: 'json',
+            success: function (data) {
+              $('#css').val(window.atob(data.content.replace(/\s/g, '')));
+            }
+          });
+        });
 
         $('#widgets').change(function () {
           $('#examples').empty();
@@ -95,6 +106,21 @@
                   $('#template').val(window.atob(data.content.replace(/\s/g, '')));
                 }
               });
+            }
+          });
+
+          $.ajax({
+            url: 'https://api.github.com/repos/begriffs/showpiece/contents/' + widget + '/styles',
+            dataType: 'json',
+            success: function (data) {
+              _.each(data, function (file) {
+                $('#styles').append(
+                  $('<option></option>')
+                    .attr('value', file.url)
+                    .text(file.name)
+                );
+              });
+              $('#styles').trigger('change');
             }
           });
         });
@@ -123,6 +149,10 @@
               JSON.parse($('#editor').val())
             )
           );
+        });
+
+        $('#apply').click(function () {
+          $('style.github').html($('#css').val());
         });
       });
     </script>
