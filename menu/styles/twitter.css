@@ -4,11 +4,11 @@ nav {
 
 nav ul {
   display: inline-block;
-}
-
-nav ul.main {
   margin: 0;
   padding: 0;
+}
+
+nav .options {
   border-color: #999;
   border-color: rgba(0,0,0,.2);
   border-style: solid;
@@ -37,12 +37,16 @@ nav li.active {
   font-weight: bold;
 }
 
-nav li.sub a {
+nav li.sub a, nav li.sub.disabled {
   padding: 0 15px;
   line-height: 30px;
 }
 
-nav li.sub:hover, nav li.sub:hover a {
+nav li.sub.disabled {
+  color: #ccc;
+}
+
+nav li:not(.disabled).sub:hover, nav li:not(.disabled).sub:hover a {
   color: #fff;
   background: #2271a9;
 }

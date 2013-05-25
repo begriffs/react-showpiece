@@ -32,10 +32,11 @@
       {.end}
       {.section items}
         </summary>
-        <ul class="sub">
+        <ul class="sub options">
       {.end}
       {.section groups}
         </summary>
+        <div class="options">
       {.end}
       {.repeated section items}
         <li class="sub {.section active}active{.end}
@@ -87,6 +88,7 @@
         </details>
       {.end}
       {.section groups}
+          </div>
         </details>
       {.end}
     </li>
