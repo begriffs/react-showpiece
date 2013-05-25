@@ -6,6 +6,11 @@
       {.section items}
         <details>
           <summary>
+      {.or}
+        {.section groups}
+          <details>
+            <summary>
+        {.end}
       {.end}
       {.section disabled}
         {text|html}
@@ -20,6 +25,9 @@
         </summary>
         <ul class="sub">
       {.end}
+      {.section groups}
+        </summary>
+      {.end}
       {.repeated section items}
         <li class="sub {.section active}active{.end}
                    {.section disabled}disabled{.end}">
@@ -30,8 +38,28 @@
         {.end}
         </li>
       {.end}
+      {.repeated section groups}
+        <fieldset>
+        {.section text}
+          <legend>{@|html}</legend>
+        {.end}
+        {.repeated section items}
+          <li class="sub {.section active}active{.end}
+                     {.section disabled}disabled{.end}">
+          {.section disabled}
+            {text|html}
+          {.or}
+            <a href="{url|htmltag}">{text|html}</a>
+          {.end}
+          </li>
+        {.end}
+        </fieldset>
+      {.end}
       {.section items}
           </ul>
+        </details>
+      {.end}
+      {.section groups}
         </details>
       {.end}
     </li>
