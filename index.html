@@ -8,21 +8,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 
     <style>
-      #control, #preview { display: inline-block; }
-      #control { width: 50%; }
-      #preview { vertical-align: top; }
-      textarea { width: 100%; }
+      .tl, .tr, .bl, .br {
+        position: absolute;
+      }
+      .tl { top: 0; left: 0; right: 50%; bottom: 50%; }
+      .tr { top: 0; left: 50%; right: 0; bottom: 50%; }
+      .bl { top: 50%; left: 0; right: 50%; bottom: 0; }
+      .br { top: 50%; left: 50%; right: 0; bottom: 0; }
+
+      .liner { position: relative; width: 100%; height: 100%; }
+
+      .controls {
+        position: absolute;
+        top: 0;
+        height: 25px;
+      }
+
+      textarea {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        height:98%;
+        width: 99%;
+      }
+      #editor, #css {
+        padding-top: 25px;
+      }
     </style>
   </head>
   <body>
-    <div id="control">
-      <select id="widgets"></select>
-      <select id="examples"></select>
-      <button id="render">Render</button>
-      <textarea id="editor" rows="20"></textarea>
-      <textarea id="template" rows="10"></textarea>
-    </div>
-    <div id="preview"></div>
+    <div class="tl"><div class="liner">
+      <div class="controls">
+        <select id="widgets"></select>
+        <select id="examples"></select>
+        <button id="render">Render</button>
+      </div>
+      <textarea id="editor"></textarea>
+    </div></div>
+    <div class="bl"><div class="liner">
+      <textarea id="template"></textarea>
+    </div></div>
+    <div class="tr"><div class="liner">
+      <div id="preview"></div>
+    </div></div>
+    <div class="br"><div class="liner">
+      <div class="controls">
+        <select id="styles"></select>
+        <button id="apply">Apply</button>
+      </div>
+      <textarea id="css"></textarea>
+    </div></div>
 
     <script>
       $(function () {
