@@ -12,6 +12,10 @@
             <summary>
         {.end}
       {.end}
+      {.section description}
+        <dl>
+          <dt>
+      {.end}
       {.section disabled}
         {text|html}
       {.or}
@@ -20,6 +24,11 @@
         {.or}
           {text|html}
         {.end}
+      {.end}
+      {.section description}
+          </dt>
+          <dd>{@|html}</dd>
+        </dl>
       {.end}
       {.section items}
         </summary>
@@ -31,10 +40,19 @@
       {.repeated section items}
         <li class="sub {.section active}active{.end}
                    {.section disabled}disabled{.end}">
+        {.section description}
+          <dl>
+            <dt>
+        {.end}
         {.section disabled}
           {text|html}
         {.or}
           <a href="{url|htmltag}">{text|html}</a>
+        {.end}
+        {.section description}
+            </dt>
+            <dd>{@|html}</dd>
+          </dl>
         {.end}
         </li>
       {.end}
@@ -46,10 +64,19 @@
         {.repeated section items}
           <li class="sub {.section active}active{.end}
                      {.section disabled}disabled{.end}">
+          {.section description}
+            <dl>
+              <dt>
+          {.end}
           {.section disabled}
             {text|html}
           {.or}
             <a href="{url|htmltag}">{text|html}</a>
+          {.end}
+          {.section description}
+              </dt>
+              <dd>{@|html}</dd>
+            </dl>
           {.end}
           </li>
         {.end}
