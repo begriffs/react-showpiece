@@ -1,0 +1,57 @@
+[
+  {
+    "text": "⚙",
+    "groups": [
+      {
+        "items": [
+          {
+            "url": "#",
+            "text": "Edit profile",
+            "description": "Joe Nelson"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "url": "#",
+            "text": "Direct Messages",
+            "active": true
+          },
+          {
+            "url": "#",
+            "text": "Lists"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "url": "#",
+            "text": "Help"
+          },
+          {
+            "url": "#",
+            "text": "Keyboard Shortcuts"
+          },
+          {
+            "url": "#",
+            "text": "Twitter Ads"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "url": "#",
+            "text": "Settings"
+          },
+          {
+            "url": "#",
+            "text": "Sign out"
+          }
+        ]
+      }
+    ]
+  }
+]
