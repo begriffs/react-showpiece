@@ -5,6 +5,7 @@
       {
         "items": [
           {
+            "id": "profile",
             "url": "#",
             "text": "Edit profile",
             "description": "Joe Nelson"

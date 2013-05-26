@@ -40,7 +40,8 @@
       {.end}
       {.repeated section items}
         <li class="sub {.section active}active{.end}
-                   {.section disabled}disabled{.end}">
+                   {.section disabled}disabled{.end}"
+                   {.section id}data-nav="{id|htmltag}"{.end}>
         {.section description}
           <dl>
             <dt>
@@ -64,7 +65,8 @@
         {.end}
         {.repeated section items}
           <li class="sub {.section active}active{.end}
-                     {.section disabled}disabled{.end}">
+                     {.section disabled}disabled{.end}"
+                     {.section id}data-nav="{id|htmltag}"{.end}>
           {.section description}
             <dl>
               <dt>
