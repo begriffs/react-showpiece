@@ -100,6 +100,8 @@ nav dl, dd, dt {
 nav li[data-nav="profile"] a {
   line-height: 20px;
   padding-left: 57px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   background-image: url(http://findicons.com/files/icons/2226/matte_basic/32/user_yellow.png);
   background-repeat: no-repeat;
   background-position: 15px center;
@@ -107,4 +109,25 @@ nav li[data-nav="profile"] a {
 
 nav li[data-nav="profile"] dd {
   color: #999;
+}
+
+nav li[data-nav="gear"] > details > summary dt {
+  display: inline-block;
+  vertical-align: text-top;
+  background-image: url(https://abs.twimg.com/a/1369413260/t1/img/twitter_web_sprite_icons.png);
+  background-repeat: no-repeat;
+  background-position: -160px -50px;
+  width: 20px;
+  height: 21px;
+}
+
+nav li[data-nav="gear"] > details > summary dd {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

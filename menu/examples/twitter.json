@@ -1,7 +1,9 @@
 [
   {
-    "text": "⚙",
-    "groups": [
+     "text": "",
+     "id": "gear",
+     "description": "Settings and help",
+     "groups": [
       {
         "items": [
           {
