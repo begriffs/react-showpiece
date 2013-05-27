@@ -12,23 +12,30 @@
             <summary>
         {.end}
       {.end}
-      {.section description}
-        <dl>
-          <dt>
-      {.end}
       {.section disabled}
-        {text|html}
       {.or}
         {.section url}
-          <a href="{@|htmltag}">{text|html}</a>
-        {.or}
-          {text|html}
+          <a href="{@|htmltag}">
         {.end}
       {.end}
       {.section description}
-          </dt>
+        <dl>
+          <dt>{text|html}</dt>
           <dd>{@|html}</dd>
         </dl>
+      {.or}
+        {.section disabled}
+          {text|html}
+        {.or}
+          {.section url}
+            <a href="{@|htmltag}">{text|html}</a>
+          {.or}
+            {text|html}
+          {.end}
+        {.end}
+      {.end}
+      {.section url}
+        </a>
       {.end}
       {.section items}
         </summary>
@@ -67,21 +74,31 @@
           <li class="sub {.section active}active{.end}
                      {.section disabled}disabled{.end}"
                      {.section id}data-nav="{id|htmltag}"{.end}>
+          {.section disabled}
+          {.or}
+            {.section url}
+              <a href="{@|htmltag}">
+            {.end}
+          {.end}
           {.section description}
             <dl>
-              <dt>
-          {.end}
-          {.section disabled}
-            {text|html}
-          {.or}
-            <a href="{url|htmltag}">{text|html}</a>
-          {.end}
-          {.section description}
-              </dt>
+              <dt>{text|html}</dt>
               <dd>{@|html}</dd>
             </dl>
+          {.or}
+            {.section disabled}
+              {text|html}
+            {.or}
+              {.section url}
+                <a href="{@|htmltag}">{text|html}</a>
+              {.or}
+                {text|html}
+              {.end}
+            {.end}
           {.end}
-          </li>
+          {.section url}
+            </a>
+          {.end}
         {.end}
         </fieldset>
       {.end}
