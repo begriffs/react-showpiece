@@ -48,7 +48,10 @@ nav li.sub.disabled {
   color: #ccc;
 }
 
-nav li:not(.disabled).sub:hover, nav li:not(.disabled).sub:hover a {
+nav li:not(.disabled).sub:hover,
+nav li:not(.disabled).sub:hover a,
+nav li:not(.disabled).sub:hover dd
+{
   color: #fff;
   background-color: #2271a9;
 }
@@ -100,4 +103,8 @@ nav li[data-nav="profile"] a {
   background-image: url(http://findicons.com/files/icons/2226/matte_basic/32/user_yellow.png);
   background-repeat: no-repeat;
   background-position: 15px center;
+}
+
+nav li[data-nav="profile"] dd {
+  color: #999;
 }
