@@ -2,7 +2,8 @@
   <ul class="main">
   {.repeated section @}
     <li class="main {.section active}active{.end}
-               {.section disabled}disabled{.end}">
+               {.section disabled}disabled{.end}"
+               {.section id}data-nav="{id|htmltag}"{.end}>
       {.section items}
         <details>
           <summary>
