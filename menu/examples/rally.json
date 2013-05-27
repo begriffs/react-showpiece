@@ -1,0 +1,97 @@
+[
+  {
+     "text": "Track",
+     "groups": [
+      {
+        "items": [
+          {
+            "url": "#",
+            "text": "Iteration Status"
+          },
+          {
+            "url": "#",
+            "text": "Team Status"
+          },
+          {
+            "url": "#",
+            "text": "Release Status"
+          },
+          {
+            "url": "#",
+            "text": "Work Product Status"
+          },
+          {
+            "url": "#",
+            "text": "Release Metrics"
+          },
+          {
+            "url": "#",
+            "text": "Portfolio Items"
+          },
+          {
+            "url": "#",
+            "text": "Portfolio Timeline"
+          },
+          {
+            "url": "#",
+            "text": "Tasks"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "url": "#",
+            "text": "Prioritized Pulling"
+          },
+          {
+            "url": "#",
+            "text": "MVF Kanban Board"
+          },
+          {
+            "url": "#",
+            "text": "MVF Capability Hierarchy and Tracking"
+          },
+          {
+            "url": "#",
+            "text": "Portfolio Alignment"
+          },
+          {
+            "url": "#",
+            "text": "Add Capabilities to an MVF"
+          },
+          {
+            "url": "#",
+            "text": "MVF WIP By Capability"
+          },
+          {
+            "url": "#",
+            "text": "Technology MVF Kanban"
+          },
+          {
+            "url": "#",
+            "text": "eCommerce MVF Kanban Board"
+          }
+        ]
+      },
+      {
+        "id": "auxiliary",
+        "items": [
+          {
+            "url": "#",
+            "text": "New Page"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Quality"
+  },
+  {
+    "text": "Reports"
+  },
+  {
+    "text": "Search"
+  }
+]

@@ -67,7 +67,7 @@
         </li>
       {.end}
       {.repeated section groups}
-        <fieldset{.section auxiliary} class="auxiliary"{.end}>
+        <fieldset{.section id} data-nav="{id|htmltag}"{.end}>
         {.section text}
           <legend>{@|html}</legend>
         {.end}
