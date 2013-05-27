@@ -50,7 +50,7 @@ nav li.sub.disabled {
 
 nav li:not(.disabled).sub:hover, nav li:not(.disabled).sub:hover a {
   color: #fff;
-  background: #2271a9;
+  background-color: #2271a9;
 }
 
 nav fieldset {
@@ -87,4 +87,17 @@ nav .options:after {
   top: -5px;
   width: 0;
   height: 0;
+}
+
+nav dl, dd, dt {
+  margin: 0;
+  padding: 0;
+}
+
+nav li[data-nav="profile"] a {
+  line-height: 20px;
+  padding-left: 57px;
+  background-image: url(http://findicons.com/files/icons/2226/matte_basic/32/user_yellow.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
 }
