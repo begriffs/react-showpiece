@@ -25,15 +25,7 @@
           <dd>{@|html}</dd>
         </dl>
       {.or}
-        {.section disabled}
-          {text|html}
-        {.or}
-          {.section url}
-            <a href="{@|htmltag}">{text|html}</a>
-          {.or}
-            {text|html}
-          {.end}
-        {.end}
+        {text|html}
       {.end}
       {.section url}
         </a>
@@ -87,15 +79,7 @@
               <dd>{@|html}</dd>
             </dl>
           {.or}
-            {.section disabled}
-              {text|html}
-            {.or}
-              {.section url}
-                <a href="{@|htmltag}">{text|html}</a>
-              {.or}
-                {text|html}
-              {.end}
-            {.end}
+            {text|html}
           {.end}
           {.section url}
             </a>
