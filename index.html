@@ -43,7 +43,7 @@
 
     <div class="tl"><div class="liner">
       <div class="controls">
-        <select id="widgets"></select>
+        <select data-bind="options: widgets, optionsText: 'name', optionsValue: 'path', value: selectedWidget"></select>
         <select id="examples"></select>
         <button id="render">Render</button>
       </div>
@@ -63,6 +63,6 @@
       <textarea id="css"></textarea>
     </div></div>
 
-    <script data-main="main" src="require.js"></script>
+    <script data-main="main" src="vendor/require.js"></script>
   </body>
 </html>
