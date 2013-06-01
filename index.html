@@ -44,16 +44,15 @@
     <div class="tl"><div class="liner">
       <div class="controls">
         <select data-bind="options: widgets, optionsText: 'name', optionsValue: 'path', value: selectedWidget"></select>
-        <select id="examples"></select>
-        <button id="render">Render</button>
+        <select data-bind="options: examples, optionsText: 'name', optionsValue: 'url', value: selectedExampleURL"></select>
       </div>
-      <textarea id="editor"></textarea>
+      <textarea id="editor" data-bind="value: selectedExample, valueUpdate: 'afterkeydown'"></textarea>
     </div></div>
     <div class="bl"><div class="liner">
-      <textarea id="template"></textarea>
+      <textarea id="template" data-bind="value: selectedTemplate, valueUpdate: 'afterkeydown'"></textarea>
     </div></div>
     <div class="tr"><div class="liner">
-      <div id="preview"></div>
+      <div id="preview" data-bind="html: renderedResult"></div>
     </div></div>
     <div class="br"><div class="liner">
       <div class="controls">
