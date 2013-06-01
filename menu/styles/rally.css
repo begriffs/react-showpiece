@@ -49,7 +49,13 @@ nav li.sub a {
   padding: 0 12px;
 }
 
-nav li.sub a:hover {
+nav fieldset {
+  display: inline-block;
+  border: 0;
+  border-right: 1px solid #b5d8eb;
+}
+
+nav fieldset:not([data-nav="auxiliary"]) a:hover {
   background: #3f84a4;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -59,10 +65,20 @@ nav li.sub a:hover {
   color: #fff;
 }
 
-nav fieldset {
-  display: inline-block;
+nav fieldset + fieldset:not([data-nav="auxiliary"]) {
+  border-right: none;
 }
 
 nav fieldset[data-nav="auxiliary"] {
   display: block;
+  border-right: none;
+}
+
+nav fieldset[data-nav="auxiliary"] a {
+  color: #085478;
+  display: inline;
+}
+
+nav fieldset[data-nav="auxiliary"] a:before {
+  content: "+";
 }
