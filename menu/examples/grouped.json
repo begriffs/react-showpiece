@@ -8,7 +8,7 @@
           {
             "url": "/open",
             "text": "Open",
-            "active": true
+            "selected": true
           },
           {
             "url": "/save",
@@ -22,7 +22,7 @@
           {
             "url": "/print",
             "text": "Print",
-            "active": true
+            "selected": true
           }
         ]
       }

@@ -19,7 +19,7 @@
           {
             "url": "#",
             "text": "Direct Messages",
-            "active": true
+            "selected": true
           },
           {
             "url": "#",

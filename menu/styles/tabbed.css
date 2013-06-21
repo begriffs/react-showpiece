@@ -20,6 +20,6 @@ nav li.sub {
   list-style-type: none;
 }
 
-nav .active summary, nav li.sub.active {
+nav .selected summary, nav li.sub.selected {
   font-weight: bold;
 }

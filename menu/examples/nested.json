@@ -2,7 +2,7 @@
   {
     "url": "/mammals",
     "text": "Mammals",
-    "active": true,
+    "selected": true,
     "items": [
       {
         "url": "/mammals/puppies",
@@ -12,7 +12,7 @@
       {
         "url": "/mammals/kitties",
         "text": "Kitties",
-        "active": true
+        "selected": true
       }
     ]
   },

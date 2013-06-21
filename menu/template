@@ -1,7 +1,7 @@
 <nav>
   <ul class="main">
   {.repeated section @}
-    <li class="main {.section active}active{.end}
+    <li class="main {.section selected}selected{.end}
                {.section items}pregnant with items{.end}
                {.section groups}pregnant with groups{.end}
                {.section disabled}disabled{.end}"
@@ -41,7 +41,7 @@
         <div class="options">
       {.end}
       {.repeated section items}
-        <li class="sub {.section active}active{.end}
+        <li class="sub {.section selected}selected{.end}
                    {.section disabled}disabled{.end}"
                    {.section id}data-nav="{id|htmltag}"{.end}>
         {.section description}
@@ -66,7 +66,7 @@
           <legend>{@|html}</legend>
         {.end}
         {.repeated section items}
-          <li class="sub {.section active}active{.end}
+          <li class="sub {.section selected}selected{.end}
                      {.section disabled}disabled{.end}"
                      {.section id}data-nav="{id|htmltag}"{.end}>
           {.section disabled}

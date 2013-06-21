@@ -35,7 +35,7 @@ nav li {
   margin: 0;
 }
 
-nav li.active {
+nav li.selected {
   font-weight: bold;
 }
 
