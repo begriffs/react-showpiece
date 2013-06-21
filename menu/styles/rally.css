@@ -12,7 +12,6 @@ nav ul.main {
 nav li.main {
   background: #3f84a4;
   border: 1px solid #085478;
-  border-bottom: 0;
   border-top: 0;
   font-size: 13px;
   line-height: 28px;
@@ -31,6 +30,8 @@ nav li.main.pregnant {
 }
 
 nav li.main:hover {
+  -webkit-box-shadow: #333 0 0 10px;
+  -moz-box-shadow: #333 0 0 10px;
   box-shadow: #333 0 0 10px;
   clip: rect(-10px 1000px 30px -10px);
   line-height: 28px;
@@ -41,9 +42,9 @@ nav li.main:hover, nav .options {
   color: black;
   background: #eff8fb;
   border: 1px solid #3f84a4;
-  border-bottom: 0;
   -webkit-box-shadow: #333 0 0 10px;
   -moz-box-shadow: #333 0 0 10px;
+  box-shadow: #333 0 0 10px;
 }
 
 nav a {
@@ -66,6 +67,7 @@ nav summary:focus {
 
 nav .options {
   position: absolute;
+  margin-left: -0.5px; // align borders
 }
 
 nav fieldset {
