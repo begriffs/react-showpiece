@@ -68,6 +68,7 @@ nav summary:focus {
 nav .options {
   position: absolute;
   margin-left: -0.5px; // align borders
+  clip: rect(0px, 1000px, 1000px, -5px);
 }
 
 nav fieldset {
