@@ -26,6 +26,10 @@ nav li.main.pregnant {
   padding: 0;
 }
 
+nav details {
+  display: block;
+}
+
 nav li.main:not(.pregnant):hover,
 nav details:hover,
 nav details[open],
