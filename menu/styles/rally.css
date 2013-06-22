@@ -17,9 +17,6 @@ nav li.main {
   line-height: 28px;
   float: left;
   margin-right: 3px;
-}
-
-nav li.main {
   color: #fff;
   display: block;
   padding: 0 20px;
@@ -29,22 +26,17 @@ nav li.main.pregnant {
   padding: 0;
 }
 
-nav li.main:hover {
-  -webkit-box-shadow: #333 0 0 10px;
-  -moz-box-shadow: #333 0 0 10px;
-  box-shadow: #333 0 0 10px;
-  clip: rect(-10px 1000px 30px -10px);
-  line-height: 28px;
-  white-space: nowrap;
-}
-
-nav li.main:hover, nav .options {
+nav li.main:not(.pregnant):hover,
+nav details:hover,
+nav details[open],
+nav .options {
   color: black;
   background: #eff8fb;
   border: 1px solid #3f84a4;
   -webkit-box-shadow: #333 0 0 10px;
   -moz-box-shadow: #333 0 0 10px;
   box-shadow: #333 0 0 10px;
+  clip: rect(0 1000px 1000px -10px);
 }
 
 nav a {
