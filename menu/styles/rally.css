@@ -20,6 +20,7 @@ nav li.main {
   color: #fff;
   display: block;
   padding: 0 20px;
+  cursor: pointer;
 }
 
 nav li.main.pregnant {
@@ -33,6 +34,7 @@ nav details {
 nav li.main:not(.pregnant):hover,
 nav details:hover,
 nav details[open],
+nav details.open, /* polyfill */
 nav .options {
   color: black;
   background: #eff8fb;
@@ -63,8 +65,8 @@ nav summary:focus {
 
 nav .options {
   position: absolute;
-  margin-left: -0.5px; // align borders
-  clip: rect(0px, 1000px, 1000px, -5px);
+  margin-left: -0.5px; /* align borders */
+  clip: rect(0px, 1000px, 1000px, -10px);
 }
 
 nav fieldset {
