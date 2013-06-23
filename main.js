@@ -86,7 +86,7 @@ require(
       });
 
       $.ajax({
-        url: 'https://api.github.com/repos/begriffs/showpiece/contents/',
+        url: 'https://api.github.com/repos/begriffs/showpiece/contents/templates',
         dataType: 'json',
         success: function (data) {
           _.each(data, function (file) {
