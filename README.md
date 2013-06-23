@@ -1,4 +1,5 @@
-### Showpiece: your data → perfect semantic html
+<img src="illustrations/darkdiamond.png" alt="Showpiece" align="right" />
+### your data → perfect semantic html
 
 Try the [playground](http://begriffs.github.io/showpiece).
 
