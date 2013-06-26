@@ -1,0 +1,16 @@
+[
+  { "url": "#", "id": "news",
+    "text": "News Feed",
+    "selected": true
+  },
+  { "url": "#", "id": "messages",
+    "text": "Messages",
+    "description": "9"
+  },
+  { "url": "#", "id": "events", "text": "Events" },
+  { "url": "#", "id": "photos", "text": "Photos" },
+  { "url": "#", "id": "friends",
+    "text": "Find Friends",
+    "description": "6"
+  }
+]
