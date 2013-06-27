@@ -4,30 +4,16 @@
     "text": "Mammals",
     "selected": true,
     "items": [
-      {
-        "url": "/mammals/puppies",
-        "text": "Puppies",
-        "disabled": true
-      },
-      {
-        "url": "/mammals/kitties",
-        "text": "Kitties",
-        "selected": true
-      }
+      { "url": "/mammals/puppies", "text": "Puppies", "disabled": true },
+      { "url": "/mammals/kitties", "text": "Kitties", "selected": true }
     ]
   },
   {
     "url": "/reptiles",
     "text": "Reptiles",
     "items": [
-      {
-        "url": "/reptiles/alligators",
-        "text": "Alligators"
-      }
+      { "url": "/reptiles/alligators", "text": "Alligators" }
     ]
   },
-  {
-    "url": "/other",
-    "text": "Mystery"
-  }
+  { "url": "/other", "text": "Mystery" }
 ]

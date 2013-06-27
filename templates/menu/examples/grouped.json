@@ -5,25 +5,13 @@
       {
         "text": "IO Stuff",
         "items": [
-          {
-            "url": "/open",
-            "text": "Open",
-            "selected": true
-          },
-          {
-            "url": "/save",
-            "text": "Save As...",
-            "disabled": true
-          }
+          { "url": "/open", "text": "Open",       "selected": true },
+          { "url": "/save", "text": "Save As...", "disabled": true }
         ]
       },
       {
         "items": [
-          {
-            "url": "/print",
-            "text": "Print",
-            "selected": true
-          }
+          { "url": "/print", "text": "Print", "selected": true }
         ]
       }
     ]

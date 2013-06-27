@@ -6,53 +6,26 @@
      "groups": [
       {
         "items": [
-          {
-            "id": "profile",
-            "url": "#",
-            "text": "John Doe",
-            "description": "Edit profile"
-          }
+          { "id": "profile", "url": "#", "text": "John Doe", "description": "Edit profile" }
         ]
       },
       {
         "items": [
-          {
-            "url": "#",
-            "text": "Direct Messages",
-            "selected": true
-          },
-          {
-            "url": "#",
-            "text": "Lists"
-          }
+          { "url": "#", "text": "Direct Messages", "selected": true },
+          { "url": "#", "text": "Lists" }
         ]
       },
       {
         "items": [
-          {
-            "url": "#",
-            "text": "Help"
-          },
-          {
-            "url": "#",
-            "text": "Keyboard Shortcuts"
-          },
-          {
-            "url": "#",
-            "text": "Twitter Ads"
-          }
+          { "url": "#", "text": "Help" },
+          { "url": "#", "text": "Keyboard Shortcuts" },
+          { "url": "#", "text": "Twitter Ads" }
         ]
       },
       {
         "items": [
-          {
-            "url": "#",
-            "text": "Settings"
-          },
-          {
-            "url": "#",
-            "text": "Sign out"
-          }
+          { "url": "#", "text": "Settings" },
+          { "url": "#", "text": "Sign out" }
         ]
       }
     ]
