@@ -2,14 +2,30 @@ nav {
   font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
+nav summary {
+  position: relative;
+  padding-left: 17px;
+}
+
 nav summary:focus {
   outline: none;
+}
+
+nav summary::-webkit-details-marker {
+  content: ' ';
+  position: absolute;
+  left: 45px;
+  top: 5px;
 }
 
 nav ul {
   display: inline-block;
   margin: 0;
   padding: 0;
+}
+
+nav summary > dl {
+  display: inline;
 }
 
 nav .options {
