@@ -2,6 +2,10 @@ nav {
   font-family: "Helvetica Neue",Arial,sans-serif;
 }
 
+nav summary:focus {
+  outline: none;
+}
+
 nav ul {
   display: inline-block;
   margin: 0;
