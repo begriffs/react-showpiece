@@ -17,13 +17,13 @@
       {.end}
       {.section disabled}
       {.or}
-        {.section url}
-          <a href="{@|htmltag}">
+        {.url?}
+          <a {.section description}{.or}class="text"{.end} href="{url|htmltag}">
         {.end}
       {.end}
       {.section description}
         <dl>
-          <dt>{text|html}</dt>
+          <dt class="text">{text|html}</dt>
           <dd>{@|html}</dd>
         </dl>
       {.or}
