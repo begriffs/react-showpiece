@@ -15,6 +15,7 @@ header {
 
 section {
   text-align: center;
+  background: #F5F5F5;
 }
 
 h3 {
@@ -33,6 +34,7 @@ h3 {
   display: inline-block;
   max-width: 254px;
   vertical-align: top;
+  font-size: 14px;
 }
 
 section img {
