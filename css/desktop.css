@@ -1,10 +1,41 @@
 body {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 960px;
+  font-family: 'PT Sans';
 }
 
 header {
+  color: white;
   background-color: #393939;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 10px;
+}
+
+section {
+  text-align: center;
+}
+
+h3 {
+  background-color: #EFC30B;
+  color: #393939;
+  font-family: 'Oswald';
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.story {
+  text-align: left;
+  display: inline-block;
+  max-width: 254px;
+  vertical-align: top;
+}
+
+section img {
+  display: inline-block;
+  vertical-align: middle;
 }

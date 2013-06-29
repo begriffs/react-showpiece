@@ -13,7 +13,7 @@ requirejs.config({
 });
 
 require(
-  ['angular', 'font!typekit,families:["Alternate Gothic No. 1 D","Proxima Nova Alt Condensed"]'],
+  ['angular', 'font!google,families:[Montserrat,PT Sans]'],
   function (angular) {
     console.log("hi");
   }
