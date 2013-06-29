@@ -1,0 +1,10 @@
+{
+  "name": "showpiece",
+  "version": "0.0.1",
+  "dependencies": {
+    "underscore": "~1.4.4",
+    "requirejs": "~2.1.5",
+    "requirejs-plugins": "~1.0.2",
+    "angular": "~1.0.7"
+  }
+}
