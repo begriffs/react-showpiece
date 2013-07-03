@@ -17,10 +17,53 @@ requirejs.config({
 require(
   [
     'angular',
+    'jsontemplate',
     'font!google,families:[Montserrat,PT Sans]',
     'domReady!'
   ],
-  function (angular) {
-    angular.bootstrap(document);
+  function (angular, jsontemplate) {
+    angular.module('showpiece', []);
+
+    angular.module('showpiece').
+      directive('show', function() {
+        return {
+          restrict: 'E',
+          transclude: true,
+          template: '<textarea ng-transclude></textarea><div class="rendered" />',
+          scope: {
+            template: '@'
+          },
+          link: function(scope, element, attrs) {
+            var text = element.text(),
+              input = element.find('textarea'),
+              rendered = element.find('div');
+
+            input.bind('keyup', function() {
+              rendered.html(
+                jsontemplate.expand(scope.template, JSON.parse(input.val()))
+              );
+            });
+
+            attrs.$observe('template', function(value) {
+              if(value) {
+                rendered.html(
+                  jsontemplate.expand(scope.template, JSON.parse(input.val()))
+                );
+              }
+            });
+
+            input.val(text);
+          }
+        };
+      }).
+      controller('ShowpieceCtrl', function($scope, $http) {
+        $http.get(
+          'https://api.github.com/repos/begriffs/showpiece/contents/templates/menu/template?ref=master'
+        ).then(function(response) {
+          $scope.menu_template = window.atob(response.data.content.replace(/\s/g, ''));
+        });
+      });
+
+    angular.bootstrap(document, ['showpiece']);
   }
 );

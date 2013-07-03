@@ -5,7 +5,7 @@
     <title>Showpiece - Write what you mean</title>
     <link rel="stylesheet" type="text/css" href="css/desktop.css" />
   </head>
-  <body>
+  <body ng-controller="ShowpieceCtrl">
     <header><img src="img/logo.png" alt="Showpiece: write what you mean" /></header>
 
     <section>
@@ -31,6 +31,12 @@
     <section>
       <h3>Example: simple menu</h3>
 
+      <show template="{{menu_template}}">
+        [
+          { "url": "/", "text": "Home" },
+          { "url": "/contact", "text": "Contact" }
+        ]
+      </show>
     </section>
 
     <script data-main="main" src="components/requirejs/require.js"></script>
