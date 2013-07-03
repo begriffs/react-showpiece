@@ -16,6 +16,7 @@ header {
 section {
   text-align: center;
   background: #F5F5F5;
+  overflow: auto;
 }
 
 h3 {
@@ -35,9 +36,27 @@ h3 {
   max-width: 254px;
   vertical-align: top;
   font-size: 14px;
+  margin-top: -15px;
 }
 
 section img {
   display: inline-block;
   vertical-align: middle;
+}
+
+section .rendered, section textarea {
+  display: inline-block;
+  vertical-align: top;
+}
+
+section .rendered {
+  width: 330px;
+  text-align: left;
+}
+
+section textarea {
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: left;
 }

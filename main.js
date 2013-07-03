@@ -29,26 +29,26 @@ require(
         return {
           restrict: 'E',
           transclude: true,
-          template: '<textarea ng-transclude></textarea><div class="rendered" />',
+          template: '<textarea ng-transclude wrap="off" rows="10"></textarea><div class="rendered" />',
           scope: {
             template: '@'
           },
           link: function(scope, element, attrs) {
-            var text = element.text(),
+            var text = element.text().replace(/^\s*\n/gm, ''),
               input = element.find('textarea'),
               rendered = element.find('div');
 
-            input.bind('keyup', function() {
+            function updateRender() {
               rendered.html(
                 jsontemplate.expand(scope.template, JSON.parse(input.val()))
               );
-            });
+            }
+
+            input.bind('keyup', updateRender);
 
             attrs.$observe('template', function(value) {
               if(value) {
-                rendered.html(
-                  jsontemplate.expand(scope.template, JSON.parse(input.val()))
-                );
+                updateRender();
               }
             });
 
