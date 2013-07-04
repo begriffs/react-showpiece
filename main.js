@@ -59,9 +59,14 @@ require(
       controller('ShowpieceCtrl', function($scope, $http) {
         $http.get(
           'https://api.github.com/repos/begriffs/showpiece/contents/templates/menu/template?ref=master'
-        ).then(function(response) {
-          $scope.menu_template = window.atob(response.data.content.replace(/\s/g, ''));
-        });
+        ).then(
+          function(response) {
+            $scope.menu_template = window.atob(response.data.content.replace(/\s/g, ''));
+          },
+          function(response) { // github api limit error
+            $scope.menu_template = response.data.message;
+          }
+        );
       });
 
     angular.bootstrap(document, ['showpiece']);
