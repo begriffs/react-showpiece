@@ -60,7 +60,5 @@ section .rendered {
 
 section textarea {
   width: 300px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  float: left;
+  margin: 0 20px;
 }
