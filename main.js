@@ -64,7 +64,7 @@ require(
             $scope.menu_template = window.atob(response.data.content.replace(/\s/g, ''));
           },
           function(response) { // github api limit error
-            $scope.menu_template = response.data.message;
+            $scope.menu_template = "Github Error: " + response.data.message;
           }
         );
       });
