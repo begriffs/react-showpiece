@@ -1,7 +1,8 @@
 <img src="illustrations/darkdiamond.png" alt="Showpiece" align="right" />
 ### your data → perfect semantic html
 
-Try the [playground](http://begriffs.github.io/showpiece).
+Check out the [project page](http://begriffs.github.io/showpiece) and
+try the [playground](http://begriffs.github.io/showpiece/playground).
 
 Let's give designers a sane baseline for their work. Showpiece is a compilation of
 [templates](https://json-template.googlecode.com/svn/trunk/doc/Introducing-JSON-Template.html)

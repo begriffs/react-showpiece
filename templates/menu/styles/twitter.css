@@ -122,7 +122,7 @@ nav li[data-nav="profile"] a {
   padding-left: 57px;
   padding-top: 7px;
   padding-bottom: 7px;
-  background-image: url(http://findicons.com/files/icons/2226/matte_basic/32/user_yellow.png);
+  background-image: url(/showpiece/img/examples/twitter_user_yellow.png);
   background-repeat: no-repeat;
   background-position: 15px center;
 }
@@ -134,7 +134,7 @@ nav li[data-nav="profile"] dd {
 nav li[data-nav="gear"] > details > summary dt {
   display: inline-block;
   vertical-align: text-top;
-  background-image: url(https://abs.twimg.com/a/1369413260/t1/img/twitter_web_sprite_icons.png);
+  background-image: url(/showpiece/img/examples/twitter_icons.png);
   background-repeat: no-repeat;
   background-position: -160px -50px;
   width: 20px;

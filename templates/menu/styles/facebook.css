@@ -82,17 +82,17 @@ nav dd {
 }
 
 nav li[data-nav="messages"] {
-  background-image: url(img/examples/fb_messages.png);
+  background-image: url(/showpiece/img/examples/fb_messages.png);
 }
 nav li[data-nav="news"] {
-  background-image: url(img/examples/fb_news.png);
+  background-image: url(/showpiece/img/examples/fb_news.png);
 }
 nav li[data-nav="events"] {
-  background-image: url(img/examples/fb_events.png);
+  background-image: url(/showpiece/img/examples/fb_events.png);
 }
 nav li[data-nav="photos"] {
-  background-image: url(img/examples/fb_photos.png);
+  background-image: url(/showpiece/img/examples/fb_photos.png);
 }
 nav li[data-nav="friends"] {
-  background-image: url(img/examples/fb_friends.png);
+  background-image: url(/showpiece/img/examples/fb_friends.png);
 }
