@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html id="home" lang="en">
+  <head>
+    <meta charset=utf-8 />
+    <title>Showpiece Playground</title>
+
+    <style>
+      .tl, .tr, .bl, .br {
+        position: absolute;
+      }
+      .tl { top: 0; left: 0; right: 50%; bottom: 50%; }
+      .tr { top: 0; left: 50%; right: 0; bottom: 50%; overflow: scroll; }
+      .bl { top: 50%; left: 0; right: 50%; bottom: 0; }
+      .br { top: 50%; left: 50%; right: 0; bottom: 0; }
+
+      .liner { position: relative; width: 100%; height: 100%; }
+
+      .controls {
+        position: absolute;
+        top: 0;
+        height: 25px;
+      }
+
+      textarea {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        height:98%;
+        width: 99%;
+      }
+      #editor, #css {
+        padding-top: 25px;
+      }
+    </style>
+
+    <style class="github"></style>
+  </head>
+  <body>
+    <div class="tl"><div class="liner">
+      <div class="controls">
+        <select id="widgets"></select>
+        <select id="examples"></select>
+        <button id="render">Render</button>
+      </div>
+      <textarea id="editor"></textarea>
+    </div></div>
+    <div class="bl"><div class="liner">
+      <textarea id="template"></textarea>
+    </div></div>
+    <div class="tr"><div class="liner">
+      <div id="preview"></div>
+    </div></div>
+    <div class="br"><div class="liner">
+      <div class="controls">
+        <select id="styles"></select>
+        <button id="apply">Apply</button>
+      </div>
+      <textarea id="css"></textarea>
+    </div></div>
+
+    <script data-main="main" src="require.js"></script>
+  </body>
+</html>
