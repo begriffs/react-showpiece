@@ -4,6 +4,8 @@
     <meta charset=utf-8 />
     <title>Showpiece - Write what you mean</title>
     <link rel="stylesheet" type="text/css" href="css/desktop.css" />
+    <link rel="stylesheet" type="text/css" href="css/twitter_demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/facebook_demo.css" />
   </head>
   <body ng-controller="ShowpieceCtrl">
     <header><img src="img/logo.png" alt="Showpiece: write what you mean" /></header>
@@ -33,7 +35,8 @@
 
       <div class="story">
         <p>Let's start simple. Just a plain menu with some items.</p>
-        <p>Oh, you can edit the definition. Try adding some items.</p>
+        <p>Oh, and you can edit the definition. Try adding some items.
+        Inspect the resulting markup with your developer tools.</p>
       </div>
 
       <show ng-cloak template="{{menu_template}}">
@@ -44,6 +47,158 @@
       </show>
     </section>
 
+    <section>
+      <h3>Groups</h3>
+
+      <div class="story">
+        <p>Many menus split their items into groups.</p>
+        <p>Also notice how marking an item disabled changes the
+           generated markup.</p>
+      </div>
+
+      <show ng-cloak template="{{menu_template}}">
+[
+  {
+    "text": "File",
+    "groups": [
+      {
+        "items": [
+          { "url": "/open", "text": "Open" },
+          { "url": "/save", "text": "Save As...",
+            "disabled": true
+          }
+        ]
+      },
+      {
+        "items": [
+          { "url": "/print", "text": "Print" }
+        ]
+      }
+    ]
+  }
+]
+      </show>
+    </section>
+
+    <section>
+      <h3>Nested submenus</h3>
+
+      <div class="story">
+        <p>Let's start simple. Just a plain menu with some items.</p>
+        <p>Oh, and you can edit the definition. Try adding some
+           items.</p>
+      </div>
+
+      <show ng-cloak template="{{menu_template}}">
+[
+  {
+    "url": "/mammals",
+    "text": "Mammals",
+    "items": [
+      { "url": "/mammals/puppies", "text": "Puppies" },
+      { "url": "/mammals/kitties", "text": "Kitties" }
+    ]
+  },
+  {
+    "url": "/reptiles",
+    "text": "Reptiles",
+    "items": [
+      { "url": "/reptiles/alligators", "text": "Alligators" }
+    ]
+  },
+  { "url": "/other", "text": "Mystery" }
+]
+      </show>
+    </section>
+
+    <section>
+      <h3>Item Descriptions</h3>
+
+      <div class="story">
+        <p>You can describe each item and group in a menu. This can
+        be used to clarify the item, or to show changing status.</p>
+      </div>
+
+      <show ng-cloak template="{{menu_template}}">
+[
+  {
+    "url": "/",
+    "text": "Home",
+    "description": "a nice place"
+  },
+  { "url": "/contact", "text": "Contact" }
+]
+      </show>
+    </section>
+
+    <section>
+      <h3>Demo: Twitter</h3>
+
+      <div class="story">
+        <p>Showpiece generates clean, semantic and flexible markup.
+        It can be styled however you like.</p>
+        <p>For example, here's the Twitter menu. Look how the logical
+        structure gets transformed</p>
+      </div>
+
+      <show ng-cloak class="twitter" template="{{menu_template}}">
+[
+  {
+     "text": "",
+     "id": "gear",
+     "description": "Settings and help",
+     "groups": [
+      {
+        "items": [
+          { "id": "profile", "url": "#", "text": "John Doe", "description": "Edit profile" }
+        ]
+      },
+      {
+        "items": [
+          { "url": "#", "text": "Direct Messages", "selected": true },
+          { "url": "#", "text": "Lists" }
+        ]
+      },
+      {
+        "items": [
+          { "url": "#", "text": "Help" },
+          { "url": "#", "text": "Keyboard Shortcuts" },
+          { "url": "#", "text": "Twitter Ads" }
+        ]
+      },
+      {
+        "items": [
+          { "url": "#", "text": "Settings" },
+          { "url": "#", "text": "Sign out" }
+        ]
+      }
+    ]
+  }
+]
+      </show>
+    </section>
+
+    <section>
+      <h3>Demo: Facebook</h3>
+
+      <div class="story">
+        <p>An interesting example where the menu item text appears in a
+        tooltip while the description is always visible.</p>
+
+        <p>The CSS uses the "data-nav" property to apply icons to each
+        menu item.</p>
+      </div>
+
+      <show ng-cloak class="facebook" template="{{menu_template}}">
+[
+  { "url": "#", "id": "news",     "text": "News Feed",    "selected": true },
+  { "url": "#", "id": "messages", "text": "Messages",     "description": "9" },
+  { "url": "#", "id": "friends",  "text": "Find Friends", "description": "6" },
+  { "url": "#", "id": "events",   "text": "Events" },
+  { "url": "#", "id": "photos",   "text": "Photos" }
+]
+      </show>
+    </section>
     <script data-main="main" src="components/requirejs/require.js"></script>
   </body>
 </html>
