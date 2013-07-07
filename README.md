@@ -38,3 +38,8 @@ The resulting markup is crowd-curated to be
 * Language and framework agnostic
 * Protect designers from noob developers
 * Confidently share stylesheets
+
+### License
+
+Showpiece is Copyright © 2013 Joe Nelson. It is free software, and may
+be redistributed under the terms specified in the LICENSE file.
