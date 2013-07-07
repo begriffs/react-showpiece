@@ -88,9 +88,9 @@
       <h3>Nested submenus</h3>
 
       <div class="story">
-        <p>Let's start simple. Just a plain menu with some items.</p>
-        <p>Oh, and you can edit the definition. Try adding some
-           items.</p>
+        <p>Menu items can contain subitems.</p>
+        <p>Main elements needn't be links, either. Look what happens
+        when you omit URLs.</p>
       </div>
 
       <show ng-cloak template="{{menu_template}}">
@@ -104,7 +104,6 @@
     ]
   },
   {
-    "url": "/reptiles",
     "text": "Reptiles",
     "items": [
       { "url": "/reptiles/alligators", "text": "Alligators" }
@@ -121,6 +120,9 @@
       <div class="story">
         <p>You can describe each item and group in a menu. This can
         be used to clarify the item, or to show changing status.</p>
+
+        <p>You can add descriptions to main items, sub items, and
+        groups.</p>
       </div>
 
       <show ng-cloak template="{{menu_template}}">
