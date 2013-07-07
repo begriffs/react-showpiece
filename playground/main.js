@@ -2,7 +2,8 @@ requirejs.config({
   shim: {
     'jsontemplate':     { exports: 'jsontemplate' },
     'underscore':       { exports: '_' },
-    'jquery.details':   ['jquery']
+    'jquery.details':   { deps: ['jquery'] },
+    'google-analytics': { exports: '_gat' }
   },
   paths: {
     'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min',
@@ -14,14 +15,9 @@ requirejs.config({
 });
 
 require(
-  ['jquery', 'underscore', 'jsontemplate', 'jquery.details'],
-  function ($, _, jsontemplate) {
-    window.ga = {
-      q: [['create', 'UA-41919791-1', 'begriffs.github.io'], ['send', 'pageview']],
-      l: Date.now()
-    };
-    window.GoogleAnalyticsObject = 'ga';
-    require(['google-analytics']);
+  ['jquery', 'underscore', 'jsontemplate', 'google-analytics', 'jquery.details'],
+  function ($, _, jsontemplate, analytics) {
+    analytics._getTracker('UA-41919791-1')._trackPageview();
 
     $(function () {
       $('#examples').change(function () {
