@@ -39,6 +39,27 @@ The resulting markup is crowd-curated to be
 * Protect designers from noob developers
 * Confidently share stylesheets
 
+### Contributing
+
+So far this project includes a template for menus, but it still needs
+templates for every other kind of common web widget To name a few:
+breadcrumbs, forms, and pagination links.
+
+You can also improve existing templates. Here's how. Take a screenshot
+of a widget on a real site. Let's say it's a menu on www.foo.com. And
+the screenshot to `wild/menus/foo.png`. Now try to define the showpiece
+structure of the menu and save it in `templates/menu/examples/foo.json`.
+Finally try to style the markup that showpiece generates and save your
+style to `templates/menu/styles/foo.css`. If the markup isn't flexible
+enough to let you style the widget correctly then submit an issue to
+this repo.
+
+The showpiece
+[playground](http://begriffs.github.io/showpiece/playground) is a good
+place to experiment with creating a new widget style. It dynamically
+loads templates, examples, and styles from this repo and provides quick
+feedback.
+
 ### License
 
 Showpiece is Copyright © 2013 Joe Nelson. It is free software, and may
