@@ -2,7 +2,8 @@ requirejs.config({
   shim: {
     'jsontemplate': { exports: 'jsontemplate' },
     'underscore': { exports: '_' },
-    'angular': { exports: 'angular' }
+    'angular': { exports: 'angular' },
+    'google-analytics': { exports: '_gat' }
   },
   paths: {
     underscore: 'components/underscore/underscore-min',
@@ -10,7 +11,8 @@ requirejs.config({
     font: 'components/requirejs-plugins/src/font',
     domReady: 'components/requirejs-domready/domReady',
     jsontemplate: 'vendor/json-template',
-    angular: 'components/angular/angular.min'
+    angular: 'components/angular/angular.min',
+    'google-analytics': 'http://www.google-analytics.com/ga'
   }
 });
 
@@ -18,10 +20,11 @@ require(
   [
     'angular',
     'jsontemplate',
+    'google-analytics',
     'font!google,families:[Montserrat,PT Sans]',
     'domReady!'
   ],
-  function (angular, jsontemplate) {
+  function (angular, jsontemplate, analytics) {
     angular.module('showpiece', []);
 
     angular.module('showpiece').
@@ -70,5 +73,6 @@ require(
       });
 
     angular.bootstrap(document, ['showpiece']);
+    analytics._getTracker('UA-41919791-1')._trackPageview();
   }
 );
