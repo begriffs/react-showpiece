@@ -65,6 +65,7 @@ section textarea {
 
 ul.jerks {
   list-style-type: none;
+  padding: 0;
 }
 
 ul.jerks img {
@@ -73,7 +74,7 @@ ul.jerks img {
 
 ul.jerks li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0;
 }
 
 footer {
@@ -134,5 +135,19 @@ footer .bw-attribution {
     transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
     box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+  }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait){
+  header img, section img, section textarea {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header img {
+    padding: 5px;
+  }
+  #forkongithub a {
+    display: block;
   }
 }
