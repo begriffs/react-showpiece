@@ -62,8 +62,14 @@
       {.end}
       {.repeated section groups}
         <fieldset{.section id} data-nav="{id|htmltag}"{.end}>
-        {.section text}
-          <legend>{@|html}</legend>
+        {.text?}
+          <legend>
+            {.section url}
+              <a href="{@|htmltag}">{text|html}</a>
+            {.or}
+              {text|html}
+            {.end}
+          </legend>
         {.end}
         <ul>
         {.repeated section items}
