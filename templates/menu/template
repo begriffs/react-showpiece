@@ -71,7 +71,7 @@
             {.end}
           </legend>
         {.end}
-        <ul>
+        <ul class="sub">
         {.repeated section items}
           <li class="sub {.section selected}selected{.end}
                      {.section disabled}disabled{.end}"
