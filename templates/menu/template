@@ -65,6 +65,7 @@
         {.section text}
           <legend>{@|html}</legend>
         {.end}
+        <ul>
         {.repeated section items}
           <li class="sub {.section selected}selected{.end}
                      {.section disabled}disabled{.end}"
@@ -87,6 +88,7 @@
             </a>
           {.end}
         {.end}
+        </ul>
         </fieldset>
       {.end}
       {.section items}
