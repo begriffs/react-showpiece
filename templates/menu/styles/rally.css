@@ -4,8 +4,9 @@ nav {
   font-family: arial,helvetica,sans-serif;
 }
 
-nav ul.main {
+nav ul {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
