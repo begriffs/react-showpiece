@@ -1,0 +1,84 @@
+nav {
+  color: white;
+  background-color: #232323;
+  font-family: Helvetica,Arial,Verdana,sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 19px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li.main {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+nav li.main:first-child {
+  margin-left: 0;
+}
+
+nav li[data-nav="home"] a {
+  text-indent: -999em;
+  display: inline-block;
+  background-image: url(/showpiece/img/examples/hulu_icons.png);
+  background-repeat: no-repeat;
+  background-position: -262px -80px;
+  height: 21px;
+  width: 60px;
+}
+
+nav summary {
+  cursor: default;
+}
+
+nav li.main > details summary:hover, nav li.main > a:hover, nav details[open] > summary {
+  color: #66AA33;
+}
+
+nav details[open] {
+  width: 300px;
+  position: absolute;
+  background-color: #333;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+nav li.sub a, nav legend a {
+  display: block;
+}
+
+nav legend a {
+  padding-left: 4px;
+}
+
+nav legend {
+  position: relative;
+  width: 100%;
+  margin-left: -2px;
+}
+
+nav li.sub a:hover, nav legend a:hover {
+  color: #fff;
+  background-color: #592;
+  border-radius: 2px;
+}
+
+nav ul.sub a {
+  padding-left: 16px;
+}
+
+nav fieldset {
+  border: 0;
+}
+
+nav .options {
+  padding-top: 16px;
+}
