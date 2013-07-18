@@ -36,6 +36,20 @@ nav summary {
   cursor: default;
   position: relative;
   z-index: 2;
+  text-transform: uppercase;
+}
+
+nav summary:after {
+  content: '\2228';
+  padding-left: 10px;
+}
+
+nav summary::-webkit-details-marker {
+  display: none;
+}
+
+nav summary:focus {
+  outline: none;
 }
 
 nav li.main > details summary:hover, nav li.main > a:hover, nav details[open] > summary {
@@ -68,17 +82,41 @@ nav li.sub a:hover, nav legend a:hover {
 }
 
 nav ul.sub a {
-  padding-left: 16px;
+  padding: 0 16px;
 }
 
 nav fieldset {
   border: 0;
+  padding: 0;
+  margin: 10px;
+  margin-left: 0;
+  display: inline-block;
+}
+
+nav fieldset[data-nav="misc"] {
+  display: block;
+  border-top: 1px solid #aaa;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+
+nav fieldset[data-nav="misc"] ul {
+  column-count: 2;
+  -moz-column-count:2;
+  -webkit-column-count:2;
+}
+
+nav fieldset[data-nav="misc"] .sub a {
+  padding: 0 4px;
 }
 
 nav .options {
-  width: 300px;
   position: absolute;
-  padding-top: 46px;
-  background-color: rgba(51,51,51, 0.7);
+  padding: 46px 10px 5px 15px;
+  margin-left: -15px;
+  background-color: rgba(35,35,35, 0.9);
   top: 0;
+  border: 2px solid #222;
+  border-radius: 7px;
+  box-shadow: 0 0 8px black;
 }
