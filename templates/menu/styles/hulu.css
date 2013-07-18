@@ -34,16 +34,12 @@ nav li[data-nav="home"] a {
 
 nav summary {
   cursor: default;
+  position: relative;
+  z-index: 2;
 }
 
 nav li.main > details summary:hover, nav li.main > a:hover, nav details[open] > summary {
   color: #66AA33;
-}
-
-nav details[open] {
-  width: 300px;
-  position: absolute;
-  background-color: #333;
 }
 
 nav a {
@@ -80,5 +76,9 @@ nav fieldset {
 }
 
 nav .options {
-  padding-top: 16px;
+  width: 300px;
+  position: absolute;
+  padding-top: 46px;
+  background-color: rgba(51,51,51, 0.7);
+  top: 0;
 }
