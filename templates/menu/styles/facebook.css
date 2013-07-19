@@ -50,7 +50,7 @@ nav .text:after {
   left: -9px;
   width: 0;
   height: 0;
-  border-color: transparent black transparent transparent;
+  border-color: transparent #31353e transparent transparent;
   border-style: solid;
   border-width: 5px;
 }
