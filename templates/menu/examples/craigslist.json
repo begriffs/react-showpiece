@@ -1,0 +1,38 @@
+[
+  {
+    "text": "community",
+    "open": true,
+    "url": "#",
+    "items": [
+      { "text": "activities", "url": "#" },
+      { "text": "artists", "url": "#" },
+      { "text": "childcare", "url": "#" },
+      { "text": "general", "url": "#" },
+      { "text": "groups", "url": "#" },
+      { "text": "pets", "url": "#" },
+      { "text": "events", "url": "#" },
+      { "text": "lost+found", "url": "#" },
+      { "text": "musicians", "url": "#" },
+      { "text": "local news", "url": "#" },
+      { "text": "politics", "url": "#" },
+      { "text": "rideshare", "url": "#" },
+      { "text": "volunteers", "url": "#" },
+      { "text": "classes", "url": "#" }
+    ]
+  },
+  {
+    "text": "personals",
+    "open": true,
+    "items": [
+      { "text": "strictly platonic", "url": "#" },
+      { "text": "women seek women", "url": "#" },
+      { "text": "women seeking men", "url": "#" },
+      { "text": "men seeking women", "url": "#" },
+      { "text": "men seeking men", "url": "#" },
+      { "text": "misc romance", "url": "#" },
+      { "text": "casual encounters", "url": "#" },
+      { "text": "missed connections", "url": "#" },
+      { "text": "rants and raves", "url": "#" }
+    ]
+  }
+]

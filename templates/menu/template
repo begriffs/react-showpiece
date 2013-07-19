@@ -7,11 +7,11 @@
                {.section disabled}disabled{.end}"
                {.section id}data-nav="{id|htmltag}"{.end}>
       {.section items}
-        <details>
+        <details {.open?}open{.end}>
           <summary>
       {.or}
         {.section groups}
-          <details>
+          <details {.open?}open{.end}>
             <summary>
         {.end}
       {.end}
