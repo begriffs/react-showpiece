@@ -45,6 +45,7 @@ require(
 
       $('#widgets').change(function () {
         $('#examples').empty();
+        $('#styles').empty();
         var widget = this.value;
         $.ajax({
           url: 'https://api.github.com/repos/begriffs/showpiece/contents/' + widget + '/examples',
