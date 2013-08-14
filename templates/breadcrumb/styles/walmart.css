@@ -1,0 +1,26 @@
+div.breadcrumb a {
+  font: bold 12px Verdana,sans-serif;
+  text-decoration: none;
+}
+
+div.breadcrumb div.scope div.scope {
+  background: white;
+  margin-left: 10px;
+}
+
+div.breadcrumb div.scope div.scope a:before {
+  width: 0; 
+  height: 0; 
+  display: inline-block;
+  content: '';
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; 
+  border-right: 5px solid #386cab;
+  margin-right: 2px;
+}
+
+div.breadcrumb div.scope div.scope.selected a:before {
+  border: none;
+  margin-left: 5px;
+}
