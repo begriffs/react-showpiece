@@ -54,6 +54,13 @@ that can be styled to look like any of them.
 </menu>
 ```
 
+### One Markup, Many Styles
+
+By challenging the markup to look like many diverse and popular sites,
+we arrive at the most flexible markup. The high-level domain specific
+language translates into semantic HTML that is eminently styleable with
+CSS.
+
 ### Interactive Demo
 
 The showpiece
