@@ -15,16 +15,53 @@ that can be styled to look like any of them.
 
 ### Translated by AngularJS
 
-TODO: Add picture of markup and resulting menu
+<img src="illustrations/render-fb.png" alt="Facebook Style" align="left" />
+```html
+<menu>
+  <item id="news"     text="News Feed"     selected="true" />
+  <item id="messages" text="Messages"      description="9" />
+  <item id="friends"  text="Find Friends"  description="6" />
+  <item id="events"   text="Events"                        />
+  <item id="photos"   text="Photos"                        />
+</menu>
 
-### Legacy Playground
+```
+
+<img src="illustrations/render-twitter.png" alt="Twitter Style" align="left" />
+```html
+<menu>
+  <item id="gear" description="settings and help">
+    <group>
+      <item id="profile" url="#" text="John Doe" description="Edit Profile" />
+    </group>
+
+    <group>
+      <item url="#" text="Direct Messages" selected=true />
+      <item url="#" text="Lists" />
+    </group>
+
+    <group>
+      <item url="#" text="Help" />
+      <item url="#" text="Keyboard Shortcuts" />
+      <item url="#" text="Twitter Ads" />
+    </group>
+
+    <group>
+      <item url="#" text="Settings" />
+      <item url="#" text="Sign out" />
+    </group>
+  </item>
+</menu>
+```
+
+### Interactive Demo
 
 The showpiece
 [playground](http://begriffs.github.io/showpiece/playground) uses an
-old-fashioend JSON template language to generate is a good place to
-experiment with creating a new widget style. We're porting this approach
-to AngularJS. It dynamically loads templates, examples, and styles from
-this repo and provides quick feedback.
+old-fashioend JSON template language to generate the markup. It is a
+good place to experiment with creating a new widget style. We're porting
+this approach to AngularJS. It dynamically loads templates, examples,
+and styles from this repo and provides quick feedback.
 
 ### Contributing
 
