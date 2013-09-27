@@ -1,21 +1,10 @@
-<img src="illustrations/darkdiamond.png" alt="Showpiece" align="right" />
-### your data → perfect semantic html
+### A new vocabulary for the front-end
 
-Check out the [project page](http://begriffs.github.io/showpiece) and
-try the [playground](http://begriffs.github.io/showpiece/playground).
+![Menus](illustrations/menus.png "Menus")
 
-Let's give designers a sane baseline for their work. Showpiece is a compilation of
-[templates](https://json-template.googlecode.com/svn/trunk/doc/Introducing-JSON-Template.html)
-to turn JSON descriptions of page elements into perfect semantic markup.
-The idea is that web apps will serve only relevant JSON data and then
-either client side code or a separate dedicated server will use these
-templates to render the final markup.
-
-This isn't an effort to make all web pages look the same, but to
-standardize expressive markup and allow designers maximum freedom while
-giving them a familiar standard. Sites using showpiece can crib from a
-common pool of styles, and are expressive enough to gracefully degrade
-on all devices and clients.
+**Look at the menus.** What do you see? I don't see `div` and `li` and
+`dl`, I see *groups* and *items* and *descriptions* and *selections.* So
+let's just use markup that says what we mean.
 
 ### Abstracted from Real Sites
 
@@ -24,20 +13,18 @@ real sites. The challenge is to collect a wide assortment of screenshots
 of actual page items, like menus, then invent one piece of clean markup
 that can be styled to look like any of them.
 
-### Quality
+### Translated by AngularJS
 
-The resulting markup is crowd-curated to be
-* responsive
-* accessible
-* continuously refined
-* semantic
-* search-engine optimized
+TODO: Add picture of markup and resulting menu
 
-### Efficiency
+### Legacy Playground
 
-* Language and framework agnostic
-* Protect designers from noob developers
-* Confidently share stylesheets
+The showpiece
+[playground](http://begriffs.github.io/showpiece/playground) uses an
+old-fashioend JSON template language to generate is a good place to
+experiment with creating a new widget style. We're porting this approach
+to AngularJS. It dynamically loads templates, examples, and styles from
+this repo and provides quick feedback.
 
 ### Contributing
 
@@ -53,12 +40,6 @@ Finally try to style the markup that showpiece generates and save your
 style to `templates/menu/styles/foo.css`. If the markup isn't flexible
 enough to let you style the widget correctly then submit an issue to
 this repo.
-
-The showpiece
-[playground](http://begriffs.github.io/showpiece/playground) is a good
-place to experiment with creating a new widget style. It dynamically
-loads templates, examples, and styles from this repo and provides quick
-feedback.
 
 ### License
 
