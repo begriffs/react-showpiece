@@ -13,45 +13,54 @@ real sites. The challenge is to collect a wide assortment of screenshots
 of actual page items, like menus, then invent one piece of clean markup
 that can be styled to look like any of them.
 
-### Translated by AngularJS
+### Translated by JSON-Template
 
 <img src="illustrations/render-fb.png" alt="Facebook Style" align="left" />
-```html
-<menu>
-  <item id="news"     text="News Feed"     selected="true" />
-  <item id="messages" text="Messages"      description="9" />
-  <item id="friends"  text="Find Friends"  description="6" />
-  <item id="events"   text="Events"                        />
-  <item id="photos"   text="Photos"                        />
-</menu>
-
+```json
+[
+  { "url": "#", "id": "news",     "text": "News Feed",    "selected": true },
+  { "url": "#", "id": "messages", "text": "Messages",     "description": "9" },
+  { "url": "#", "id": "friends",  "text": "Find Friends", "description": "6" },
+  { "url": "#", "id": "events",   "text": "Events" },
+  { "url": "#", "id": "photos",   "text": "Photos" }
+]
 ```
 
 <img src="illustrations/render-twitter.png" alt="Twitter Style" align="left" />
-```html
-<menu>
-  <item id="gear" description="settings and help">
-    <group>
-      <item id="profile" url="#" text="John Doe" description="Edit Profile" />
-    </group>
-
-    <group>
-      <item url="#" text="Direct Messages" selected=true />
-      <item url="#" text="Lists" />
-    </group>
-
-    <group>
-      <item url="#" text="Help" />
-      <item url="#" text="Keyboard Shortcuts" />
-      <item url="#" text="Twitter Ads" />
-    </group>
-
-    <group>
-      <item url="#" text="Settings" />
-      <item url="#" text="Sign out" />
-    </group>
-  </item>
-</menu>
+```json
+[
+  {
+     "text": "",
+     "id": "gear",
+     "description": "Settings and help",
+     "groups": [
+      {
+        "items": [
+          { "id": "profile", "url": "#", "text": "John Doe", "description": "Edit profile" }
+        ]
+      },
+      {
+        "items": [
+          { "url": "#", "text": "Direct Messages", "selected": true },
+          { "url": "#", "text": "Lists" }
+        ]
+      },
+      {
+        "items": [
+          { "url": "#", "text": "Help" },
+          { "url": "#", "text": "Keyboard Shortcuts" },
+          { "url": "#", "text": "Twitter Ads" }
+        ]
+      },
+      {
+        "items": [
+          { "url": "#", "text": "Settings" },
+          { "url": "#", "text": "Sign out" }
+        ]
+      }
+    ]
+  }
+]
 ```
 
 ### One Markup, Many Styles
