@@ -9,7 +9,7 @@ requirejs.config({
     'jquery.details': 'jquery.details',
     'underscore': 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min',
     'jsontemplate': 'json-template',
-    'google-analytics': 'http://www.google-analytics.com/ga'
+    'google-analytics': 'https://www.google-analytics.com/ga'
   }
 });
 
