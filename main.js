@@ -12,7 +12,7 @@ requirejs.config({
     domReady: 'components/requirejs-domready/domReady',
     jsontemplate: 'vendor/json-template',
     angular: 'components/angular/angular.min',
-    'google-analytics': 'http://www.google-analytics.com/ga'
+    'google-analytics': 'https://www.google-analytics.com/ga'
   }
 });
 
