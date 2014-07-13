@@ -9,7 +9,6 @@ requirejs.config({
     'jquery.details': 'jquery.details',
     'underscore': 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min',
     'jsontemplate': 'json-template',
-    'google-analytics': 'https://www.google-analytics.com/ga'
   }
 });
 
@@ -20,8 +19,6 @@ require(
       q: [['create', 'UA-41919791-1', 'begriffs.github.io'], ['send', 'pageview']],
       l: Date.now()
     };
-    window.GoogleAnalyticsObject = 'ga';
-    require(['google-analytics']);
 
     $(function () {
       $('#examples').change(function () {
