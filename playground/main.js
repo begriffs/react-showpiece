@@ -2,23 +2,19 @@ requirejs.config({
   shim: {
     'jsontemplate':     { exports: 'jsontemplate' },
     'underscore':       { exports: '_' },
-    'jquery.details':   { deps: ['jquery'] },
-    'google-analytics': { exports: '_gat' }
+    'jquery.details':   { deps: ['jquery'] }
   },
   paths: {
     'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min',
     'jquery.details': 'jquery.details',
     'underscore': 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min',
-    'jsontemplate': 'json-template',
-    'google-analytics': 'http://www.google-analytics.com/ga'
+    'jsontemplate': 'json-template'
   }
 });
 
 require(
-  ['jquery', 'underscore', 'jsontemplate', 'google-analytics', 'jquery.details'],
-  function ($, _, jsontemplate, analytics) {
-    analytics._getTracker('UA-41919791-1')._trackPageview();
-
+  ['jquery', 'underscore', 'jsontemplate', 'jquery.details'],
+  function ($, _, jsontemplate) {
     $(function () {
       $('#examples').change(function () {
         $.ajax({
