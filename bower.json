@@ -1,0 +1,28 @@
+{
+  "name": "react-showpiece",
+  "main": "lib/index.js",
+  "version": "0.0.1",
+  "authors": [
+    "Joe Nelson"
+  ],
+  "description": "Eminently styleable markup",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "markup",
+    "style"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "*"
+  }
+}
