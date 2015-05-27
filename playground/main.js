@@ -40,7 +40,7 @@ require(
         $('#styles').empty();
         var widget = this.value;
         $.ajax({
-          url: 'https://api.github.com/repos/begriffs/showpiece/contents/' + widget + '/examples',
+          url: 'https://api.github.com/repos/begriffs/react-showpiece/contents/' + widget + '/examples',
           dataType: 'json',
           success: function (data) {
             _.each(data, function (file) {
@@ -53,7 +53,7 @@ require(
             $('#examples').trigger('change');
 
             $.ajax({
-              url: 'https://api.github.com/repos/begriffs/showpiece/contents/' + widget + '/template?ref=master',
+              url: 'https://api.github.com/repos/begriffs/react-showpiece/contents/' + widget + '/template?ref=master',
               dataType: 'json',
               success: function (data) {
                 $('#template').val(window.atob(data.content.replace(/\s/g, '')));
@@ -63,7 +63,7 @@ require(
         });
 
         $.ajax({
-          url: 'https://api.github.com/repos/begriffs/showpiece/contents/' + widget + '/styles',
+          url: 'https://api.github.com/repos/begriffs/react-showpiece/contents/' + widget + '/styles',
           dataType: 'json',
           success: function (data) {
             _.each(data, function (file) {
@@ -79,7 +79,7 @@ require(
       });
 
       $.ajax({
-        url: 'https://api.github.com/repos/begriffs/showpiece/contents/templates',
+        url: 'https://api.github.com/repos/begriffs/react-showpiece/contents/templates',
         dataType: 'json',
         success: function (data) {
           _.each(data, function (file) {
