@@ -1,8 +1,8 @@
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
 
-var Item = React.createClass({
+var Group = React.createClass({
   propTypes: {
     text: React.PropTypes.string,
     url: React.PropTypes.string
@@ -13,4 +13,4 @@ var Item = React.createClass({
   }
 });
 
-module.exports = Item;
+module.exports = Group;

@@ -5,7 +5,7 @@ INTEGRATION_TESTS = $(shell find ./tests -name '*.js')
 MAKE_DOCS = $(MAKE) --no-print-directory -C docs
 
 lint:
-	@$(BIN)/jsxhint --verbose $(filter-out $(TESTS), $(shell find ./lib -name '*.js'))
+	@$(BIN)/jsxhint --verbose $(filter-out $(TESTS), $(shell find ./lib -name '*.jsx'))
 
 clean:
 	@rm -rf ./node_modules/
@@ -15,6 +15,12 @@ test:
 
 ci:
 	@NODE_PATH=$(NODE_PATH) $(BIN)/mochify --watch -R dot $(TESTS) $(INTEGRATION_TESTS)
+
+build:
+	@NODE_PATH=$(NODE_PATH) $(BIN)/browserify -t reactify ./lib/*.jsx preview.jsx -o ./dist/showpiece.js
+
+watch:
+	@NODE_PATH=$(NODE_PATH) $(BIN)/watchify --poll -t reactify ./lib/*.jsx preview.jsx -o ./dist/showpiece.js
 
 unit-test: test-phantomjs
 
