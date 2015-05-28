@@ -19,9 +19,6 @@ ci:
 build:
 	@NODE_PATH=$(NODE_PATH) $(BIN)/browserify -t reactify ./lib/*.jsx preview.jsx -o ./dist/showpiece.js
 
-watch:
-	@NODE_PATH=$(NODE_PATH) $(BIN)/watchify --poll -t reactify ./lib/*.jsx preview.jsx -o ./dist/showpiece.js
-
 unit-test: test-phantomjs
 
 integration-ci:
