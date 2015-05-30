@@ -53,7 +53,7 @@ var Group = React.createClass({
   },
 
   render: function() {
-    var menu = <Menu level={this.props.level + 1} items={this.props.items} />;
+    var menu = <Menu level={this.props.level} items={this.props.items} />;
     return (this.props.text
       ? <fieldset><legend>{this.props.text}</legend>{menu}</fieldset>
       : <fieldset>{menu}</fieldset>
