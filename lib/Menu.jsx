@@ -6,12 +6,12 @@ var cx = require('classnames');
 var propTypeNonnegInteger = function(props, name, componentName) {
   function isInt(i) {
     // http://stackoverflow.com/a/14794066/3102996
-    return !isNaN(i) && parseInt(Number(i)) == i && !isNaN(parseInt(i, 10));
+    return !isNaN(i) && parseInt(Number(i)) === i && !isNaN(parseInt(i, 10));
   }
 
   if(!isInt(props[name]) || props[name] < 0) {
     return new Error(
-      "Invalid prop `" + name +"` with value `" + props[name] +
+      "Invalid prop `" + name + "` with value `" + props[name] +
       "` supplied to `" + componentName +
       "`, expected nonnegative integer");
   }
@@ -38,7 +38,7 @@ var Item = React.createClass({
     return (this.props.items || this.props.groups
       ? <details>
           <summary>{described}</summary>
-          <Menu className="options" level={this.props.level+1}
+          <Menu className="options" level={this.props.level + 1}
             items={this.props.items} groups={this.props.groups} />
         </details>
       : described
@@ -53,7 +53,7 @@ var Group = React.createClass({
   },
 
   render: function() {
-    var menu = <Menu level={this.props.level+1} items={this.props.items} />;
+    var menu = <Menu level={this.props.level + 1} items={this.props.items} />;
     var titledMenu = (this.props.text
       ? <fieldset><legend>{this.props.text}</legend>{menu}</fieldset>
       : <fieldset>{menu}</fieldset>
