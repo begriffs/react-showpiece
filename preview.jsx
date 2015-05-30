@@ -9,7 +9,20 @@ var items = [
     items: [
       { url: "http://google2.com", text: "Another Search Engine" }
     ]
-  }
+  },
+  { text: "File",
+    groups: [
+      {
+        text: "Save",
+        items: [
+          { url: "#", text: "Save..." },
+          { url: "#", text: "Save As..."}
+        ]
+      }, {
+        items: [{text: "Exit"}]
+      }
+    ]
+  },
 ];
 
 React.render(<Menu items={items} />, document.getElementById('content'));
