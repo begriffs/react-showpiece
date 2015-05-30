@@ -54,12 +54,10 @@ var Group = React.createClass({
 
   render: function() {
     var menu = <Menu level={this.props.level + 1} items={this.props.items} />;
-    var titledMenu = (this.props.text
+    return (this.props.text
       ? <fieldset><legend>{this.props.text}</legend>{menu}</fieldset>
       : <fieldset>{menu}</fieldset>
     );
-
-    return <div className="options">{titledMenu}</div>;
   }
 });
 
@@ -88,16 +86,20 @@ var Menu = React.createClass({
           <Item level={level} {...i} />
         </li>;
     });
+    if(items.length > 0) {
+      items = <ul className={classes}>{items}</ul>;
+    }
     var groups = (this.props.groups || []).map(function (g) {
-      return <li className={levelClass}>
-          <Group level={level} {...g} />
-        </li>;
+      return <Group level={level} {...g} />;
     });
+    if(groups.length > 0) {
+      groups = <div className="options">{groups}</div>;
+    }
     return (
-      <ul className={classes}>
+      <div>
         {items}
         {groups}
-      </ul>
+      </div>
     );
   }
 });
