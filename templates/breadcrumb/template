@@ -1,9 +1,0 @@
-<div class="breadcrumb">
-  {.repeated section @}
-    <div class="scope {.section selected}selected{.end}">
-      <a href="{url|htmltag}">{text|html}</a>
-  {.end}
-  {.repeated section @}
-    </div>
-  {.end}
-</div>

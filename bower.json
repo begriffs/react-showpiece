@@ -18,9 +18,8 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "demo",
+    "lib"
   ],
   "dependencies": {
     "react": "*"

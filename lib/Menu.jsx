@@ -26,7 +26,7 @@ var Item = React.createClass({
     groups: React.PropTypes.array
   },
 
-  render: function() {
+  render: function () {
     var inner = (this.props.url
       ? <a className="text" href={this.props.url}>{this.props.text}</a>
       : <span className="text">{this.props.text}</span>);
