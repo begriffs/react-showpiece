@@ -54,8 +54,11 @@ var Group = React.createClass({
 
   render: function() {
     var menu = <Menu level={this.props.level} items={this.props.items} />;
+    var inner = (this.props.url
+      ? <a href={this.props.url}>{this.props.text}</a>
+      : <span>{this.props.text}</span>);
     return (this.props.text
-      ? <fieldset><legend>{this.props.text}</legend>{menu}</fieldset>
+      ? <fieldset><legend>{inner}</legend>{menu}</fieldset>
       : <fieldset>{menu}</fieldset>
     );
   }
