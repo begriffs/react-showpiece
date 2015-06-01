@@ -122,31 +122,31 @@
   padding: 0;
 }
 
-.shwp-menu li[data-nav="profile"] a {
+.shwp-menu li[data-item="profile"] a {
   line-height: 20px;
   padding-left: 57px;
   padding-top: 7px;
   padding-bottom: 7px;
-  background-image: url(/showpiece/img/examples/twitter_user_yellow.png);
+  background-image: url(/demo/img/twitter_user_yellow.png);
   background-repeat: no-repeat;
   background-position: 15px center;
 }
 
-.shwp-menu li[data-nav="profile"] dd {
+.shwp-menu li[data-item="profile"] dd {
   color: #999;
 }
 
-.shwp-menu li[data-nav="gear"] > details > summary dt {
+.shwp-menu li[data-item="gear"] > details > summary dt {
   display: inline-block;
   vertical-align: text-top;
-  background-image: url(/showpiece/img/examples/twitter_icons.png);
+  background-image: url(/demo/img/twitter_icons.png);
   background-repeat: no-repeat;
   background-position: -160px -50px;
   width: 20px;
   height: 21px;
 }
 
-.shwp-menu li[data-nav="gear"] > details > summary dd {
+.shwp-menu li[data-item="gear"] > details > summary dd {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;

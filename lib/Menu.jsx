@@ -27,21 +27,27 @@ var Item = React.createClass({
   },
 
   render: function () {
-    var inner = (this.props.url
-      ? <a className="text" href={this.props.url}>{this.props.text}</a>
-      : <span className="text">{this.props.text}</span>);
-
-    var described = (this.props.description
-      ? <dl><dt>{inner}</dt><dd>{this.props.description}</dd></dl>
-      : inner);
-
+    var summary;
+    if(this.props.description) {
+      var described = <dl>
+        <dt className="text">{this.props.text}</dt>
+        <dd>{this.props.description}</dd>
+      </dl>;
+      summary = (this.props.url
+        ? <a href={this.props.url}>{described}</a>
+        : described);
+    } else {
+      summary = (this.props.url
+        ? <a className="text" href={this.props.url}>{this.props.text}</a>
+        : <span className="text">{this.props.text}</span>);
+    }
     return (this.props.items || this.props.groups
       ? <details>
-          <summary>{described}</summary>
+          <summary>{summary}</summary>
           <Menu className="options" level={this.props.level + 1}
             items={this.props.items} groups={this.props.groups} />
         </details>
-      : described
+      : summary
     );
   }
 });
@@ -58,8 +64,8 @@ var Group = React.createClass({
       ? <a href={this.props.url}>{this.props.text}</a>
       : <span>{this.props.text}</span>);
     return (this.props.text
-      ? <fieldset><legend>{inner}</legend>{menu}</fieldset>
-      : <fieldset>{menu}</fieldset>
+      ? <fieldset data-item={this.props.id}><legend>{inner}</legend>{menu}</fieldset>
+      : <fieldset data-item={this.props.id}>{menu}</fieldset>
     );
   }
 });

@@ -82,17 +82,17 @@
 }
 
 .shwp-menu li[data-item="messages"] {
-  background-image: url(/showpiece/img/examples/fb_messages.png);
+  background-image: url(/demo/img/fb_messages.png);
 }
 .shwp-menu li[data-item="news"] {
-  background-image: url(/showpiece/img/examples/fb_news.png);
+  background-image: url(/demo/img/fb_news.png);
 }
 .shwp-menu li[data-item="events"] {
-  background-image: url(/showpiece/img/examples/fb_events.png);
+  background-image: url(/demo/img/fb_events.png);
 }
 .shwp-menu li[data-item="photos"] {
-  background-image: url(/showpiece/img/examples/fb_photos.png);
+  background-image: url(/demo/img/fb_photos.png);
 }
 .shwp-menu li[data-item="friends"] {
-  background-image: url(/showpiece/img/examples/fb_friends.png);
+  background-image: url(/demo/img/fb_friends.png);
 }

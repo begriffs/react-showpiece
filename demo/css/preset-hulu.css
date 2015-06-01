@@ -22,12 +22,12 @@
   margin-left: 0;
 }
 
-.shwp-menu li[data-nav-"home"] a {
+.shwp-menu li[data-item="home"] a {
   text-indent: -999em;
   display: inline-block;
-  background-image: url(/showpiece/img/examples/hulu_icons.png);
+  background-image: url(/demo/img/hulu_icons.png);
   background-repeat: no-repeat;
-  background-position: -262px -80px;
+  background-position: -262px -84px;
   height: 21px;
   width: 60px;
 }
@@ -93,20 +93,20 @@
   display: inline-block;
 }
 
-.shwp-menu fieldset[data-nav-"misc"] {
+.shwp-menu fieldset[data-item="misc"] {
   display: block;
   border-top: 1px solid #aaa;
   padding-top: 15px;
   margin-top: 5px;
 }
 
-.shwp-menu fieldset[data-nav-"misc"] ul {
+.shwp-menu fieldset[data-item="misc"] ul {
   column-count: 2;
   -moz-column-count:2;
   -webkit-column-count:2;
 }
 
-.shwp-menu fieldset[data-nav-"misc"] .level-1 a {
+.shwp-menu fieldset[data-item="misc"] .level-1 a {
   padding: 0 4px;
 }
 

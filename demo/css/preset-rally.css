@@ -76,7 +76,7 @@
   border-right: 1px solid #b5d8eb;
 }
 
-.shwp-menu fieldset:not([data-nav="auxiliary"]) a:hover {
+.shwp-menu fieldset:not([data-item="auxiliary"]) a:hover {
   background: #3f84a4;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -86,20 +86,20 @@
   color: #fff;
 }
 
-.shwp-menu fieldset + fieldset:not([data-nav="auxiliary"]) {
+.shwp-menu fieldset + fieldset:not([data-item="auxiliary"]) {
   border-right: none;
 }
 
-.shwp-menu fieldset[data-nav="auxiliary"] {
+.shwp-menu fieldset[data-item="auxiliary"] {
   display: block;
   border-right: none;
 }
 
-.shwp-menu fieldset[data-nav="auxiliary"] a {
+.shwp-menu fieldset[data-item="auxiliary"] a {
   color: #085478;
   display: inline;
 }
 
-.shwp-menu fieldset[data-nav="auxiliary"] a:before {
+.shwp-menu fieldset[data-item="auxiliary"] a:before {
   content: "+";
 }
