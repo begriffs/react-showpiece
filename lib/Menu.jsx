@@ -90,7 +90,7 @@ var Menu = React.createClass({
         </li>;
     });
     if(items.length > 0) {
-      items = <ul className={classes}>{items}</ul>;
+      items = <div className={classes}><ul>{items}</ul></div>;
     }
     var groups = (this.props.groups || []).map(function (g) {
       return <Group level={level} {...g} />;
