@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-.shwp-menu li.level-0.pregnant {
+.shwp-menu li.level-0.with-groups {
   padding: 0;
 }
 
@@ -32,7 +32,7 @@
   display: block;
 }
 
-.shwp-menu li.level-0:not(.pregnant):hover,
+.shwp-menu:not(.with-groups) li.level-0:hover,
 .shwp-menu details:hover,
 .shwp-menu details[open],
 .shwp-menu details.open, /* polyfill */
