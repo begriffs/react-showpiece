@@ -86,7 +86,7 @@ var Menu = React.createClass({
 
     var items = (this.props.items || []).map(function (i) {
       var liClasses = cx(levelClass, {'with-groups': !!i.groups});
-      return <li className={liClasses}>
+      return <li className={liClasses} data-item={i.id}>
           <Item level={level} {...i} />
         </li>;
     });

@@ -81,18 +81,18 @@
   background-position: -18px -594px;
 }
 
-.shwp-menu li[data-nav="messages"] {
+.shwp-menu li[data-item="messages"] {
   background-image: url(/showpiece/img/examples/fb_messages.png);
 }
-.shwp-menu li[data-nav="news"] {
+.shwp-menu li[data-item="news"] {
   background-image: url(/showpiece/img/examples/fb_news.png);
 }
-.shwp-menu li[data-nav="events"] {
+.shwp-menu li[data-item="events"] {
   background-image: url(/showpiece/img/examples/fb_events.png);
 }
-.shwp-menu li[data-nav="photos"] {
+.shwp-menu li[data-item="photos"] {
   background-image: url(/showpiece/img/examples/fb_photos.png);
 }
-.shwp-menu li[data-nav="friends"] {
+.shwp-menu li[data-item="friends"] {
   background-image: url(/showpiece/img/examples/fb_friends.png);
 }

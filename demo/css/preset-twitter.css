@@ -59,6 +59,11 @@
   font-weight: bold;
 }
 
+.shwp-menu.level-1 ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .shwp-menu li.level-1 a, .shwp-menu li.level-1.disabled {
   padding: 0 15px;
   line-height: 30px;
