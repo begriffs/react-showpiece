@@ -42,7 +42,7 @@ var Item = React.createClass({
         : <span className="text">{this.props.text}</span>);
     }
     return (this.props.items || this.props.groups
-      ? <details>
+      ? <details open={this.props.open}>
           <summary>{summary}</summary>
           <Menu className="options" level={this.props.level + 1}
             items={this.props.items} groups={this.props.groups} />
