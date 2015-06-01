@@ -85,7 +85,8 @@ var Menu = React.createClass({
     var classes = cx(this.props.className, 'shwp-menu', levelClass);
 
     var items = (this.props.items || []).map(function (i) {
-      return <li className={levelClass}>
+      var liClasses = cx(levelClass, {'with-groups': !!i.groups});
+      return <li className={liClasses}>
           <Item level={level} {...i} />
         </li>;
     });
