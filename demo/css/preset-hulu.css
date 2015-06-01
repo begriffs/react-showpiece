@@ -1,0 +1,122 @@
+.shwp-menu.level-0 {
+  color: white;
+  background-color: #232323;
+  font-family: Helvetica,Arial,Verdana,sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 19px;
+}
+
+.shwp-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shwp-menu li.level-0 {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.shwp-menu li.level-0:first-child {
+  margin-left: 0;
+}
+
+.shwp-menu li[data-nav-"home"] a {
+  text-indent: -999em;
+  display: inline-block;
+  background-image: url(/showpiece/img/examples/hulu_icons.png);
+  background-repeat: no-repeat;
+  background-position: -262px -80px;
+  height: 21px;
+  width: 60px;
+}
+
+.shwp-menu summary {
+  cursor: default;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.shwp-menu summary:after {
+  content: '\2228';
+  padding-left: 10px;
+}
+
+.shwp-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.shwp-menu summary:focus {
+  outline: none;
+}
+
+.shwp-menu li.level-0 > details summary:hover, .shwp-menu li.level-0 > a:hover, .shwp-menu details[open] > summary {
+  color: #66AA33;
+}
+
+.shwp-menu a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.shwp-menu li.level-1 a, .shwp-menu legend a {
+  display: block;
+}
+
+.shwp-menu legend a {
+  padding-left: 4px;
+}
+
+.shwp-menu legend {
+  position: relative;
+  width: 100%;
+  margin-left: -2px;
+}
+
+.shwp-menu li.level-1 a:hover, .shwp-menu legend a:hover {
+  color: #fff;
+  background-color: #592;
+  border-radius: 2px;
+}
+
+.shwp-menu li.level-1 a {
+  padding: 0 16px;
+}
+
+.shwp-menu fieldset {
+  border: 0;
+  padding: 0;
+  margin: 10px;
+  margin-left: 0;
+  display: inline-block;
+}
+
+.shwp-menu fieldset[data-nav-"misc"] {
+  display: block;
+  border-top: 1px solid #aaa;
+  padding-top: 15px;
+  margin-top: 5px;
+}
+
+.shwp-menu fieldset[data-nav-"misc"] ul {
+  column-count: 2;
+  -moz-column-count:2;
+  -webkit-column-count:2;
+}
+
+.shwp-menu fieldset[data-nav-"misc"] .level-1 a {
+  padding: 0 4px;
+}
+
+.shwp-menu .options {
+  position: absolute;
+  padding: 46px 10px 5px 15px;
+  margin-left: -15px;
+  background-color: rgba(35,35,35, 0.9);
+  top: 0;
+  border: 2px solid #222;
+  border-radius: 7px;
+  box-shadow: 0 0 8px black;
+}

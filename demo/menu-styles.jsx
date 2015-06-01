@@ -53,7 +53,9 @@ var App = React.createClass({
           <input type="text" value={this.state.cssPath} onChange={this.updateCssImport} />
         </div>
 
-        <div style={ {display: "inline-block", width: "50%", "vertical-align": "top" } }>
+        <div style={
+            {display: "inline-block", width: "50%", "box-sizing": "border-box",
+             "padding-left": "20px", "vertical-align": "top" } }>
           <Menu {...menuObject} />
         </div>
 
