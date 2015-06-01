@@ -1,0 +1,98 @@
+.shwp-menu {
+  font-family: 'Helvetica Neue', Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+  font-weight: 500;
+  line-height: 1.358;
+  font-size: 12px;
+  background-color: #31353e;
+  display: inline-block;
+}
+
+.shwp-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0 4px 8px;
+  position: relative;
+}
+
+.shwp-menu li {
+  height: 24px;
+  line-height: 22px;
+  padding: 4px 2px;
+  vertical-align: middle;
+  padding-left: 32px;
+  background-repeat: no-repeat;
+}
+
+.shwp-menu dl, dd, dt {
+  margin: 0;
+  padding: 0;
+}
+
+.shwp-menu dd {
+  display: inline;
+}
+
+.shwp-menu .text {
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  background: #31353e;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
+.shwp-menu .text:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -9px;
+  width: 0;
+  height: 0;
+  border-color: transparent #31353e transparent transparent;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.shwp-menu li:hover .text {
+  display: inline-block;
+  left: 65px;
+}
+
+.shwp-menu dd {
+  padding: 0 2px;
+
+  display: inline-block;
+  width: 12px;
+  height: 17px;
+  line-height: 17px;
+
+  margin-right: 2px;
+
+  color: #c2c4cc;
+  font-size: 10px;
+  margin-top: 1px;
+  position: relative;
+  vertical-align: middle;
+  background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/mUsmlsgK_Oz.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -18px -594px;
+}
+
+.shwp-menu li[data-nav="messages"] {
+  background-image: url(/showpiece/img/examples/fb_messages.png);
+}
+.shwp-menu li[data-nav="news"] {
+  background-image: url(/showpiece/img/examples/fb_news.png);
+}
+.shwp-menu li[data-nav="events"] {
+  background-image: url(/showpiece/img/examples/fb_events.png);
+}
+.shwp-menu li[data-nav="photos"] {
+  background-image: url(/showpiece/img/examples/fb_photos.png);
+}
+.shwp-menu li[data-nav="friends"] {
+  background-image: url(/showpiece/img/examples/fb_friends.png);
+}

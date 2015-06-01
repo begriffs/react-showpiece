@@ -17,7 +17,7 @@ ci:
 	@NODE_PATH=$(NODE_PATH) $(BIN)/mochify --watch -R dot $(TESTS) $(INTEGRATION_TESTS)
 
 build:
-	@NODE_PATH=$(NODE_PATH) $(BIN)/browserify -t reactify ./lib/*.jsx demo/menu.jsx -o ./dist/showpiece.js
+	@NODE_PATH=$(NODE_PATH) $(BIN)/browserify -t reactify ./lib/*.jsx demo/menu-styles.jsx -o ./dist/showpiece.js
 
 unit-test: test-phantomjs
 

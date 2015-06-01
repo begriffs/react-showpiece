@@ -1,0 +1,69 @@
+.shwp-menu {
+  font-family: sans-serif;
+  color: #222;
+}
+
+.shwp-menu a {
+  color: rgb(0,0,238);
+  text-decoration: none;
+}
+
+.shwp-menu a:hover {
+  color: rgb(128,0,128);
+  background: white;
+}
+
+.shwp-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shwp-menu summary {
+  font-size: 20px;
+  background: rgb(204,204,204);
+  padding: 2px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.shwp-menu summary a {
+  display: block;
+  padding: 0 5px;
+}
+
+.shwp-menu.level-1 {
+  font-size: 17px;
+  -moz-column-count:2;
+  -webkit-column-count:2;
+  column-count:2;
+}
+
+.shwp-menu li.level-1 a {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1px;
+}
+
+.shwp-menu li.level-1 a:hover {
+  border-bottom: 1px solid #ccc;
+  background: #eee;
+}
+
+.shwp-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.shwp-menu li.main[data-nav="wide"] ul.level-1 {
+  -moz-column-count:1;
+  -webkit-column-count:1;
+  column-count:1;
+  padding-right: 8px;
+}
+
+.shwp-menu li.main[data-nav="wide"] ul.level-1 a {
+  display: block;
+}

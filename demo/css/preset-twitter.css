@@ -1,0 +1,153 @@
+.shwp-menu {
+  font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+.shwp-menu summary {
+  position: relative;
+  padding-left: 17px;
+}
+
+.shwp-menu summary:focus {
+  outline: none;
+}
+
+.shwp-menu summary::-webkit-details-marker {
+  content: ' ';
+  position: absolute;
+  left: 45px;
+  top: 5px;
+}
+
+.shwp-menu ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.shwp-menu summary > dl {
+  display: inline;
+}
+
+.shwp-menu .options {
+  border-color: #999;
+  border-color: rgba(0,0,0,.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  background-clip: padding-box;
+  margin-top: 7px;
+  position: relative;
+}
+
+.shwp-menu, .shwp-menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.shwp-menu a {
+  display: block;
+}
+
+.shwp-menu li {
+  list-style-type: none;
+  margin: 0;
+}
+
+.shwp-menu li.selected {
+  font-weight: bold;
+}
+
+.shwp-menu li.level-1 a, .shwp-menu li.level-1.disabled {
+  padding: 0 15px;
+  line-height: 30px;
+}
+
+.shwp-menu li.level-1.disabled {
+  color: #ccc;
+}
+
+.shwp-menu li:not(.disabled).level-1:hover,
+.shwp-menu li:not(.disabled).level-1:hover a,
+.shwp-menu li:not(.disabled).level-1:hover dd
+{
+  color: #fff;
+  background-color: #2271a9;
+}
+
+.shwp-menu fieldset {
+  border: none;
+  border-bottom: 1px solid;
+  padding: 4px 0;
+  margin: 0;
+}
+
+.shwp-menu fieldset:last-child {
+  border-bottom: none;
+}
+
+.shwp-menu .options:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #aaa;
+  border-bottom-color: rgba(0,0,0,.2);
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: -6px;
+  width: 0;
+  height: 0;
+}
+
+.shwp-menu .options:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #fff;
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: -5px;
+  width: 0;
+  height: 0;
+}
+
+.shwp-menu dl, dd, dt {
+  margin: 0;
+  padding: 0;
+}
+
+.shwp-menu li[data-nav="profile"] a {
+  line-height: 20px;
+  padding-left: 57px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-image: url(/showpiece/img/examples/twitter_user_yellow.png);
+  background-repeat: no-repeat;
+  background-position: 15px center;
+}
+
+.shwp-menu li[data-nav="profile"] dd {
+  color: #999;
+}
+
+.shwp-menu li[data-nav="gear"] > details > summary dt {
+  display: inline-block;
+  vertical-align: text-top;
+  background-image: url(/showpiece/img/examples/twitter_icons.png);
+  background-repeat: no-repeat;
+  background-position: -160px -50px;
+  width: 20px;
+  height: 21px;
+}
+
+.shwp-menu li[data-nav="gear"] > details > summary dd {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
